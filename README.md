@@ -1,9 +1,9 @@
 # II-2019-20
 
-Roluri :
-Scrum Master - Dani
-Business Analyst - Teo
-Product Owner - Claudiu
-Arhitect - Alex
-Quality Assuarance - Vlad
+Roluri : <br/>
+Scrum Master - Dani <br/>
+Business Analyst - Teo <br/>
+Product Owner - Claudiu <br/>
+Arhitect - Alex <br/>
+Quality Assuarance - Vlad <br/>
 Devs - Ionela si Vasile
