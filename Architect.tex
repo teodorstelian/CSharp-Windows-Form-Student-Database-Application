@@ -1,0 +1,203 @@
+\documentclass{beamer}
+
+\title{Industrial Informatics Semester Project}
+\subtitle{Technical University of Cluj-Napoca}
+
+\usepackage{graphicx}
+\graphicspath{ {./images/} }
+
+\usepackage[rightcaption]{sidecap}
+
+\usepackage{wrapfig}
+
+\setbeamertemplate{caption}[numbered]
+
+\author[Technical University of Cluj-Napoca]{%
+	\texorpdfstring{%
+		\begin{columns}
+			\column{.5\linewidth}
+			\centering
+			Achim Daniel \\ Băltărețu Teodor-Stelian \\ Bugnariu Vlad \\ Ciobotaru Alexandru
+			\column{.5\linewidth}
+			\centering
+			Fildan Claudiu \\ Furdui Vasile Teodor \\ Gog Ionela-Maria
+		\end{columns}
+	}
+	{Author 1, Author 2, Author 3}
+}
+
+\mode<presentation>
+
+\usetheme{Darmstadt}
+
+\begin{document}
+	\maketitle
+	
+    \begin{frame}
+    	\frametitle{Table of Contents}
+    	\tableofcontents
+    \end{frame}	
+
+\AtBeginSection[]
+{
+	\begin{frame}
+		\frametitle{Table of Contents}
+		\tableofcontents[currentsection]
+	\end{frame}
+}
+
+%   PRESENTATION SLIDES
+\section{Motivation}
+
+\begin{frame}{Motivation}
+	\begin{itemize}
+		\item Develop a \textbf{desktop} application implemented using \textbf{Windows Forms} technology.
+		\item A Windows Form application is an \textbf{Event-Driven application}, supported by Microsoft's \textbf{.NET Framework}.
+		\item The application will spend most of its time simply waiting for the user to interact with.
+	\end{itemize}
+
+\begin{columns}
+	\column{.5\linewidth}
+	\includegraphics[width = 5cm, height = 3.5cm]{dotNet}
+\end{columns}
+
+\end{frame}
+
+%------------------------------------------------
+
+
+\section{Environments and Development Tools} %
+%------------------------------------------------
+
+\begin{frame}{Development Tools}
+	
+	\begin{itemize}
+		\item IDE: \textbf{Visual Studio}
+		\item Database implementation: \textbf{SQL Server/Service-based Database}
+		\item Design of the class diagram: \textbf{StarUML} 
+	\end{itemize}
+
+\begin{columns}
+	\column{.5\linewidth}
+	\centering
+	\includegraphics[width = 5cm, height=2.5cm]{visualStudio} \\ \includegraphics[height=2.5cm]{sqlServer}
+
+	\column{.5\linewidth}
+	\centering
+	\includegraphics[height=2.5cm]{starUml}
+\end{columns}
+
+\end{frame}
+
+%------------------------------------------------
+
+\section{Code Sharing}
+
+\AtBeginSection[]
+{
+	\begin{frame}
+		\frametitle{Table of Contents}
+		\tableofcontents[currentsection]
+	\end{frame}
+}
+
+%------------------------------------------------
+
+\begin{frame}{Sharing Environments}
+	
+	\begin{itemize}
+		\item Each team member must always be aware of the application's development progress.
+		\item Consequently, out team will use the following ways of communication:
+	\end{itemize}
+
+
+\begin{columns}
+	\column{.5\linewidth}
+	\centering
+	 \includegraphics[width = 3.5cm, height=3.5cm]{gitHub}
+	
+	\column{.5\linewidth}
+	\centering
+	\includegraphics[height=3cm, width=5.5cm]{flock}
+\end{columns}
+	
+	
+\end{frame}
+
+%------------------------------------------------
+
+\begin{frame}{Code Branches}
+	
+	\begin{itemize}
+		\item The code sharing environments gives the programmers the possibility of dividing their code into specific sections:
+		\begin{itemize}
+			\item Frontend branch
+			\item Backend branch
+		\end{itemize}
+		\item Use of Design Patterns and Clean Code Principles
+	\end{itemize}
+	
+\end{frame}
+
+%------------------------------------------------
+
+
+%------------------------------------------------
+
+\section{Modules of the Application}
+
+\begin{frame}{Front-end Module}
+	
+	\begin{itemize}
+		\item \textbf{Front-end module:} contains the elements which will determine\textbf{ the man-machine interaction}
+		\item \textbf{Examples:} Button, TextBox, MenuStrip, PictureBox etc.
+		\item \textbf{No. of forms: }Login/Sign Up, Home Page, User Page, First Test, Second Test, Results (Interpretation), List of Universities
+		\item Styling and design principles:
+			\begin{itemize}
+				\item  \textbf{Visibility of system status}
+				\item \textbf{User control and freedom}
+				\item \textbf{Flexibility and efficiency of use}
+				\item \textbf{Aesthetic and minimalist design} 
+			\end{itemize}
+	\end{itemize}
+	\vspace{-1.75cm}
+	\hspace{7cm}
+	\centering
+	\includegraphics[height=3cm, width=3cm]{frontend}
+	
+	
+
+\end{frame}
+
+\begin{frame}{Back-end Module}
+		\begin{itemize}
+			\item \textbf{Back-end module:} handles the \textbf{business logic} as well as \textbf{the data storage} of the application
+			\item Contains the database, which will consist of the following tables:
+				\begin{itemize}
+					\item \textbf{Users Table}
+					\item \textbf{Two tables, each with questions from the tests}
+					\item \textbf{Faculties Table}
+					\item \textbf{Results table}
+				\end{itemize}
+		\end{itemize}
+	
+\vspace{-0.75cm}
+\hspace{7cm}
+\centering
+\includegraphics[height=3cm, width=3cm]{backend}
+	
+\end{frame}
+
+
+
+\begin{frame}
+
+\centering
+\includegraphics[height=10cm, width=7cm]{questions}
+
+\end{frame}
+
+%----------------------------------------------------------------------------------------
+
+\end{document} 
+
