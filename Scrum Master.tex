@@ -1,0 +1,212 @@
+\documentclass{beamer}
+
+\title{Industrial Informatics Semester Project}
+\subtitle{Technical University of Cluj-Napoca}
+
+\usepackage{graphicx}
+\graphicspath{ {./images/} }
+
+\usepackage[rightcaption]{sidecap}
+
+\usepackage{wrapfig}
+
+\setbeamertemplate{caption}[numbered]
+
+\author[Technical University of Cluj-Napoca]{%
+	\texorpdfstring{%
+		\begin{columns}
+			\column{.5\linewidth}
+			\centering
+			Achim Daniel \\ Băltărețu Teodor-Stelian \\ Bugnariu Vlad \\ Ciobotaru Alexandru
+			\column{.5\linewidth}
+			\centering
+			Fildan Claudiu \\ Furdui Vasile Teodor \\ Gog Ionela-Maria
+		\end{columns}
+	}
+	{Author 1, Author 2, Author 3}
+}
+
+\mode<presentation>
+
+\usetheme{Darmstadt}
+
+\begin{document}
+	\maketitle
+	
+    \begin{frame}
+    	\frametitle{Table of Contents}
+    	\tableofcontents
+    \end{frame}	
+
+\AtBeginSection[]
+{
+	\begin{frame}
+		\frametitle{Table of Contents}
+		\tableofcontents[currentsection]
+	\end{frame}
+}
+
+%   PRESENTATION SLIDES
+\section{Motivation}
+
+\begin{frame}{Motivation}
+	\begin{itemize}
+		\item Make sure that everyone in the project understands and uses the \textbf{Scrum framework} correctly
+		\item Work with the Product Owner to manage the Product Backlog 
+		\item Remove \textbf{impediments} from the team to \textbf{improve} the workflow
+	\end{itemize}
+
+\end{frame}
+
+%------------------------------------------------
+
+
+\section{Scrum Framework} %
+%------------------------------------------------
+
+\begin{frame}{Scrum Process - Overview}
+	
+\begin{columns}
+	\centering
+	\includegraphics[width = 13cm, height=7cm]{Scrum} 
+\end{columns}
+
+\end{frame}
+
+%------------------------------------------------
+
+\begin{frame}{Sprint Planning}
+
+\begin{columns}
+	\centering
+	\includegraphics[width = 13cm, height=7cm]{scrumBacklog} 
+\end{columns}
+
+\end{frame}
+
+%------------------------------------------------
+
+\begin{frame}{Way of Working (WoW)}
+	
+	\begin{itemize}
+		 
+		\item Team members work from home
+		\item Keeping an easy communication flow within the team
+		\item Impromptu meetings in case of recurring problems
+		\item In case of high implementation costs, a discussion with the Product Owner will be held regarding a change in a specific functionality	
+		\item Sprints: 2 Weeks
+		\item Daily Scrum: informal meetings via Skype or Flock
+		
+		
+		
+	\end{itemize}
+
+\end{frame}
+
+%------------------------------------------------
+
+\section{Sprint Planning}
+
+\AtBeginSection[]
+{
+	\begin{frame}
+		\frametitle{Table of Contents}
+		\tableofcontents[currentsection]
+	\end{frame}
+}
+
+%------------------------------------------------
+
+\begin{frame}{Functionalities - Sprint I}
+	
+\begin{itemize}	
+	\begin{columns}
+		\column{.2\linewidth}
+		
+		 \item Sign up \\ \item Homepage \\ \item First Test \\ \item Second Test \\ \item Select a Faculty
+		
+		\column{.2\linewidth}
+		\centering
+		\includegraphics[width = 2cm, height=2cm]{arrow}
+		
+		\column{.2\linewidth}
+		\item Homepage \\ \item Sign Up \\ \item First Test \\ \item Select a Faculty
+		
+	\end{columns}
+\end{itemize} 
+\end{frame}
+
+%------------------------------------------------
+
+\begin{frame}{Sprint I Backlog}
+	
+	\begin{itemize}
+		\item Homepage: Design of the page
+		\item Sign Up: Create the Database which contains the Users
+		\item First Test: Choose the format of the First Test 
+		
+	\end{itemize}
+	
+\end{frame}
+
+%------------------------------------------------
+
+\begin{frame}{Functionalities - Sprint II}
+
+\begin{itemize}	
+	\begin{columns}
+		\column{.2\linewidth}
+		
+		 \item Sign up \\ \item Homepage \\ \item First Test \\ \item Second Test \\ \item Result Page \\ \item Select a Faculty
+		
+		\column{.2\linewidth}
+		\centering
+		\includegraphics[width = 2cm, height=2cm]{arrow}
+		
+		\column{.2\linewidth}
+		\item Sign Up \\ \item First Test \\ \item Second Test \\ \item Results \\ \item Select a Faculty
+		
+	\end{columns}
+\end{itemize} 
+\end{frame}
+
+%------------------------------------------------
+
+\begin{frame}{Sprint II Backlog}
+
+\begin{itemize}
+\item Sign Up: Design of the page
+\item First Test: Design of the page
+\item First Test: Create the Database which contains the questions
+\item Second Test: Choose the format of the Second Test 
+\item Results: Interpret the answers of the two tests
+\item Select a Faculty: Create the Database containing the info about the Faculty
+
+\end{itemize}
+
+\end{frame}
+
+%------------------------------------------------
+
+\begin{frame}{Future Functionalities}
+
+\begin{itemize}
+	\item Login
+	\item Create the User Page
+\end{itemize}
+
+\end{frame}
+
+%-----------------------------------------
+
+\begin{frame}
+
+\centering
+\includegraphics[height=8cm, width=8cm]{questions}
+
+
+\hspace{113cm}
+
+\end{frame}
+\end{document} 
+
