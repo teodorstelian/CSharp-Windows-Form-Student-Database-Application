@@ -1,0 +1,10 @@
+C:\Users\Teo\Desktop\IIProject\Menu\Menu\bin\Debug\Menu.exe.config
+C:\Users\Teo\Desktop\IIProject\Menu\Menu\bin\Debug\Menu.exe
+C:\Users\Teo\Desktop\IIProject\Menu\Menu\bin\Debug\Menu.pdb
+C:\Users\Teo\Desktop\IIProject\Menu\Menu\obj\Debug\Menu.csprojAssemblyReference.cache
+C:\Users\Teo\Desktop\IIProject\Menu\Menu\obj\Debug\Menu.Form1.resources
+C:\Users\Teo\Desktop\IIProject\Menu\Menu\obj\Debug\Menu.Properties.Resources.resources
+C:\Users\Teo\Desktop\IIProject\Menu\Menu\obj\Debug\Menu.csproj.GenerateResource.cache
+C:\Users\Teo\Desktop\IIProject\Menu\Menu\obj\Debug\Menu.csproj.CoreCompileInputs.cache
+C:\Users\Teo\Desktop\IIProject\Menu\Menu\obj\Debug\Menu.exe
+C:\Users\Teo\Desktop\IIProject\Menu\Menu\obj\Debug\Menu.pdb
