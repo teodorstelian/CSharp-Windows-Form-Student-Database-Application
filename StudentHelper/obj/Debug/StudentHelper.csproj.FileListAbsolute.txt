@@ -1,0 +1,11 @@
+C:\Users\Teo\Desktop\IIProject\MainMenu\MainMenu\obj\Debug\StudentHelper.csprojAssemblyReference.cache
+C:\Users\Teo\Desktop\IIProject\MainMenu\MainMenu\obj\Debug\Menu.FormMainMenu.resources
+C:\Users\Teo\Desktop\IIProject\MainMenu\MainMenu\obj\Debug\MainMenu.Properties.Resources.resources
+C:\Users\Teo\Desktop\IIProject\MainMenu\MainMenu\obj\Debug\StudentHelper.csproj.GenerateResource.cache
+C:\Users\Teo\Desktop\IIProject\MainMenu\MainMenu\obj\Debug\StudentHelper.csproj.CoreCompileInputs.cache
+C:\Users\Teo\Desktop\IIProject\MainMenu\MainMenu\obj\Debug\MainMenu.exe
+C:\Users\Teo\Desktop\IIProject\MainMenu\MainMenu\obj\Debug\MainMenu.pdb
+C:\Users\Teo\Desktop\IIProject\MainMenu\MainMenu\obj\Debug\Menu.MainApp.resources
+C:\Users\Teo\Desktop\IIProject\MainMenu\MainMenu\bin\Debug\MainMenu.exe.config
+C:\Users\Teo\Desktop\IIProject\MainMenu\MainMenu\bin\Debug\MainMenu.exe
+C:\Users\Teo\Desktop\IIProject\MainMenu\MainMenu\bin\Debug\MainMenu.pdb
