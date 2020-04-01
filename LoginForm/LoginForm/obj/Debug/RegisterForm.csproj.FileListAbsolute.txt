@@ -1,0 +1,11 @@
+C:\Users\ciobo\Desktop\LoginForm\LoginForm\obj\Debug\LoginForm.RegisterForm.resources
+C:\Users\ciobo\Desktop\LoginForm\LoginForm\obj\Debug\LoginForm.Form2.resources
+C:\Users\ciobo\Desktop\LoginForm\LoginForm\obj\Debug\LoginForm.Properties.Resources.resources
+C:\Users\ciobo\Desktop\LoginForm\LoginForm\obj\Debug\RegisterForm.csproj.GenerateResource.cache
+C:\Users\ciobo\Desktop\LoginForm\LoginForm\obj\Debug\LoginForm.exe
+C:\Users\ciobo\Desktop\LoginForm\LoginForm\obj\Debug\LoginForm.pdb
+C:\Users\ciobo\Desktop\LoginForm\LoginForm\bin\Debug\LoginForm.exe.config
+C:\Users\ciobo\Desktop\LoginForm\LoginForm\bin\Debug\LoginForm.exe
+C:\Users\ciobo\Desktop\LoginForm\LoginForm\bin\Debug\LoginForm.pdb
+C:\Users\ciobo\Desktop\LoginForm\LoginForm\obj\Debug\RegisterForm.csprojAssemblyReference.cache
+C:\Users\ciobo\Desktop\LoginForm\LoginForm\obj\Debug\LoginForm.Login.resources
