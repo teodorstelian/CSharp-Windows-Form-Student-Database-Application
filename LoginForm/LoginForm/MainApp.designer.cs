@@ -1,4 +1,4 @@
-﻿namespace Menu
+﻿namespace LoginForm
 {
     partial class MainApp
     {

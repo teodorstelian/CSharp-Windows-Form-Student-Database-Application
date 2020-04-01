@@ -8,7 +8,7 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
-namespace Menu
+namespace LoginForm
 {
     public partial class FormMainMenu : Form
     {
@@ -45,30 +45,33 @@ namespace Menu
 
         }
 
-        private void button5_Click(object sender, EventArgs e)
-        {
-          
-        }
+      
 
         private void button3_Click_1(object sender, EventArgs e)
         {
-            MainApp M = new MainApp();
+            MainApp Main = new MainApp();
             this.Hide();
-            M.ShowDialog();
+            Main.ShowDialog();
             this.Close();
 
         }
 
-        private void textBox1_TextChanged(object sender, EventArgs e)
+
+        private void RegisterMenuBTN_Click(object sender, EventArgs e)
         {
+            RegisterForm Register = new RegisterForm();
+            this.Hide();
+            Register.ShowDialog();
+            this.Close();
 
         }
 
-        private void panelSideMenu_Paint(object sender, PaintEventArgs e)
+        private void LoginMenuBTN_Click(object sender, EventArgs e)
         {
-
+            Login Log = new Login();
+            this.Hide();
+            Log.ShowDialog();
+            this.Close();
         }
-
-       
     }
 }

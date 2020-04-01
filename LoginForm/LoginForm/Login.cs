@@ -40,5 +40,21 @@ namespace LoginForm
 			mailBarLogin.BackColor = Color.WhiteSmoke;
 			emailLogin.ForeColor = Color.WhiteSmoke;
 		}
+
+		private void loginButton_Click(object sender, EventArgs e)
+		{
+			MainApp User = new MainApp();
+			this.Hide();
+			User.ShowDialog();
+			this.Close();
+		}
+
+		private void MainMenuButton_Click(object sender, EventArgs e)
+		{
+			FormMainMenu Menu = new FormMainMenu();
+			this.Hide();
+			Menu.ShowDialog();
+			this.Close();
+		}
 	}
 }

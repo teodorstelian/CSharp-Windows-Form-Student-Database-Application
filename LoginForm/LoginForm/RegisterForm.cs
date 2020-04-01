@@ -74,5 +74,21 @@ namespace LoginForm
 			mailBarRegister.BackColor = Color.FromArgb(3, 174, 218);
 			emailRegister.ForeColor = Color.FromArgb(3, 174, 218);
 		}
+
+		private void register_Click(object sender, EventArgs e)
+		{
+			MainApp User = new MainApp();
+			this.Hide();
+			User.ShowDialog();
+			this.Close();
+		}
+
+		private void mainMenu_Click(object sender, EventArgs e)
+		{
+			FormMainMenu Menu = new FormMainMenu();
+			this.Hide();
+			Menu.ShowDialog();
+			this.Close();
+		}
 	}
 }
