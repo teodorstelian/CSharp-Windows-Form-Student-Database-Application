@@ -1,0 +1,10 @@
+E:\an 3 sem 2\Industrial Informatics - II\proiect\loginDB\bin\Debug\loginDB.exe.config
+E:\an 3 sem 2\Industrial Informatics - II\proiect\loginDB\bin\Debug\loginDB.exe
+E:\an 3 sem 2\Industrial Informatics - II\proiect\loginDB\bin\Debug\loginDB.pdb
+E:\an 3 sem 2\Industrial Informatics - II\proiect\loginDB\obj\Debug\loginDB.csprojAssemblyReference.cache
+E:\an 3 sem 2\Industrial Informatics - II\proiect\loginDB\obj\Debug\loginDB.login.resources
+E:\an 3 sem 2\Industrial Informatics - II\proiect\loginDB\obj\Debug\loginDB.Properties.Resources.resources
+E:\an 3 sem 2\Industrial Informatics - II\proiect\loginDB\obj\Debug\loginDB.csproj.GenerateResource.cache
+E:\an 3 sem 2\Industrial Informatics - II\proiect\loginDB\obj\Debug\loginDB.csproj.CoreCompileInputs.cache
+E:\an 3 sem 2\Industrial Informatics - II\proiect\loginDB\obj\Debug\loginDB.exe
+E:\an 3 sem 2\Industrial Informatics - II\proiect\loginDB\obj\Debug\loginDB.pdb
