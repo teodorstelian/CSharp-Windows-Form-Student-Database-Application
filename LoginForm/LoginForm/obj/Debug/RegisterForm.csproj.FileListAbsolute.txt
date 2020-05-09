@@ -23,3 +23,19 @@ C:\Users\Teo\Desktop\DE LA ALEX\LoginForm\LoginForm\obj\Debug\LoginForm.exe
 C:\Users\Teo\Desktop\DE LA ALEX\LoginForm\LoginForm\obj\Debug\LoginForm.pdb
 C:\Users\Teo\Desktop\DE LA ALEX\LoginForm\LoginForm\obj\Debug\LoginForm.FormMainMenu.resources
 C:\Users\Teo\Desktop\DE LA ALEX\LoginForm\LoginForm\obj\Debug\LoginForm.MainApp.resources
+C:\Users\ciobo\Documents\GitHub\II-2019-20\LoginForm\LoginForm\bin\Debug\StudentHelperDatabase.mdf
+C:\Users\ciobo\Documents\GitHub\II-2019-20\LoginForm\LoginForm\bin\Debug\StudentHelperDatabase_log.ldf
+C:\Users\ciobo\Documents\GitHub\II-2019-20\LoginForm\LoginForm\bin\Debug\LoginForm.exe.config
+C:\Users\ciobo\Documents\GitHub\II-2019-20\LoginForm\LoginForm\bin\Debug\LoginForm.exe
+C:\Users\ciobo\Documents\GitHub\II-2019-20\LoginForm\LoginForm\bin\Debug\LoginForm.pdb
+C:\Users\ciobo\Documents\GitHub\II-2019-20\LoginForm\LoginForm\obj\Debug\RegisterForm.csprojAssemblyReference.cache
+C:\Users\ciobo\Documents\GitHub\II-2019-20\LoginForm\LoginForm\obj\Debug\LoginForm.Login.resources
+C:\Users\ciobo\Documents\GitHub\II-2019-20\LoginForm\LoginForm\obj\Debug\LoginForm.MainApp.resources
+C:\Users\ciobo\Documents\GitHub\II-2019-20\LoginForm\LoginForm\obj\Debug\LoginForm.FormMainMenu.resources
+C:\Users\ciobo\Documents\GitHub\II-2019-20\LoginForm\LoginForm\obj\Debug\LoginForm.RegisterForm.resources
+C:\Users\ciobo\Documents\GitHub\II-2019-20\LoginForm\LoginForm\obj\Debug\LoginForm.Form2.resources
+C:\Users\ciobo\Documents\GitHub\II-2019-20\LoginForm\LoginForm\obj\Debug\LoginForm.Properties.Resources.resources
+C:\Users\ciobo\Documents\GitHub\II-2019-20\LoginForm\LoginForm\obj\Debug\RegisterForm.csproj.GenerateResource.cache
+C:\Users\ciobo\Documents\GitHub\II-2019-20\LoginForm\LoginForm\obj\Debug\RegisterForm.csproj.CoreCompileInputs.cache
+C:\Users\ciobo\Documents\GitHub\II-2019-20\LoginForm\LoginForm\obj\Debug\LoginForm.exe
+C:\Users\ciobo\Documents\GitHub\II-2019-20\LoginForm\LoginForm\obj\Debug\LoginForm.pdb
