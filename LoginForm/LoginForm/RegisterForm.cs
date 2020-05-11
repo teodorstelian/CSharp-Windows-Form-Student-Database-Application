@@ -14,67 +14,36 @@ namespace LoginForm
 {
 	public partial class RegisterForm : Form
 	{
-		SqlConnection myCon = new SqlConnection();
-		DataSet dsUsersNew;
 
 		public RegisterForm()
 		{
-			myCon = new SqlConnection();
 			InitializeComponent();
 		}
 
-		public DataSet getUsers()
+
+		private async void  register_Click(object sender, EventArgs e)
 		{
-
-			dsUsersNew = new DataSet();
-
-			SqlDataAdapter daUsers = new SqlDataAdapter("SELECT * FROM Users", myCon);
-			daUsers.Fill(dsUsersNew, "Users");
-
-			myCon.Close();
-			return dsUsersNew;
-		}
-
-		private int InsertIntoUsers(String username, String email, String password)
-		{
-			int i = 0;
-			myCon.ConnectionString = @"Data Source=(LocalDB)\MSSQLLocalDB;AttachDbFilename=|DataDirectory|\StudentHelperDatabase.mdf;Integrated Security=True";
-
-			string query = "INSERT into Users(username, email, password) values('" + usernameRegister.Text + "', '" + emailRegister.Text + "', '" + passwordRegister.Text + "')";
-
-			using (SqlCommand command = new SqlCommand(query, myCon))
+			if (string.IsNullOrEmpty(usernameRegister.Text))
 			{
-				myCon.Open();
-				i = command.ExecuteNonQuery();
+				MessageBox.Show("Please enter your username", "Message", MessageBoxButtons.OK, MessageBoxIcon.Warning);
 			}
-			return i;
+			
+			if(passwordRegister.Text != confirmPasswordRegister.Text)
+			{
+				MessageBox.Show("Password don't match! ", "Message", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+				return;
+			}
+
+			IUserRepository repository = new UserRepository();
+			bool result = await repository.Insert(new User() { UserName = usernameRegister.Text, Password = passwordRegister.Text, Email = emailRegister.Text });
+
+			if (result)
+			{
+				MessageBox.Show("You have successfully signed in", "Message", MessageBoxButtons.OK, MessageBoxIcon.Information);
+			}
+			else
+				MessageBox.Show("Error", "Message", MessageBoxButtons.OK, MessageBoxIcon.Information);
 		}
-
-
-		private void register_Click(object sender, EventArgs e)
-		{
-
-			string username = usernameRegister.Text;
-			string email = emailRegister.Text;
-			string password = passwordRegister.Text;
-
-			InsertIntoUsers(username, email, password);
-
-			clearInputs();
-
-			dsUsersNew = getUsers();
-
-			myCon.Close();
-		}
-
-		private void clearInputs()
-		{
-			usernameRegister.Clear();
-			emailRegister.Clear();
-			passwordRegister.Clear();
-
-		}
-
 
 
 		/// <summary>
@@ -135,8 +104,6 @@ namespace LoginForm
 			emailRegister.ForeColor = Color.FromArgb(3, 174, 218);
 		}
 
-
-
 		private void mainMenu_Click(object sender, EventArgs e)
 		{
 			FormMainMenu Menu = new FormMainMenu();
@@ -144,10 +111,6 @@ namespace LoginForm
 			Menu.ShowDialog();
 			this.Close();
 		}
-
-
-
-
 
 	}
 }

@@ -101,6 +101,19 @@ namespace LoginForm.Properties {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to if not exists(select username from users where username=@UserName)
+        ///begin
+        ///	insert into users(username,password,email)
+        ///	values(@UserName,@Password,@Email)
+        ///end.
+        /// </summary>
+        internal static string InsertUser {
+            get {
+                return ResourceManager.GetString("InsertUser", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
         internal static System.Drawing.Bitmap Instagram {
