@@ -31,14 +31,11 @@ C:\Users\ciobo\Documents\GitHub\II-2019-20\LoginForm\LoginForm\obj\Debug\LoginFo
 C:\Users\ciobo\Documents\GitHub\II-2019-20\LoginForm\LoginForm\obj\Debug\LoginForm.MainApp.resources
 C:\Users\ciobo\Documents\GitHub\II-2019-20\LoginForm\LoginForm\obj\Debug\LoginForm.FormMainMenu.resources
 C:\Users\ciobo\Documents\GitHub\II-2019-20\LoginForm\LoginForm\obj\Debug\LoginForm.RegisterForm.resources
-C:\Users\ciobo\Documents\GitHub\II-2019-20\LoginForm\LoginForm\obj\Debug\LoginForm.Form2.resources
 C:\Users\ciobo\Documents\GitHub\II-2019-20\LoginForm\LoginForm\obj\Debug\LoginForm.Properties.Resources.resources
 C:\Users\ciobo\Documents\GitHub\II-2019-20\LoginForm\LoginForm\obj\Debug\RegisterForm.csproj.GenerateResource.cache
 C:\Users\ciobo\Documents\GitHub\II-2019-20\LoginForm\LoginForm\obj\Debug\RegisterForm.csproj.CoreCompileInputs.cache
 C:\Users\ciobo\Documents\GitHub\II-2019-20\LoginForm\LoginForm\obj\Debug\LoginForm.exe
 C:\Users\ciobo\Documents\GitHub\II-2019-20\LoginForm\LoginForm\obj\Debug\LoginForm.pdb
-C:\Users\ciobo\Documents\GitHub\II-2019-20\LoginForm\LoginForm\bin\Debug\StudentHelperDatabase.mdf
-C:\Users\ciobo\Documents\GitHub\II-2019-20\LoginForm\LoginForm\bin\Debug\StudentHelperDatabase_log.ldf
 C:\Users\ciobo\Desktop\LoginForm\LoginForm\obj\Debug\LoginForm.MainApp.resources
 C:\Users\ciobo\Desktop\LoginForm\LoginForm\obj\Debug\LoginForm.FormMainMenu.resources
 C:\Users\ciobo\Desktop\LoginForm\LoginForm\obj\Debug\RegisterForm.csproj.CoreCompileInputs.cache
@@ -83,3 +80,8 @@ C:\Users\Teo\Documents\GitHub\II-2019-20\LoginForm\LoginForm\obj\Debug\RegisterF
 C:\Users\Teo\Documents\GitHub\II-2019-20\LoginForm\LoginForm\obj\Debug\RegisterForm.csproj.CopyComplete
 C:\Users\Teo\Documents\GitHub\II-2019-20\LoginForm\LoginForm\obj\Debug\LoginForm.exe
 C:\Users\Teo\Documents\GitHub\II-2019-20\LoginForm\LoginForm\obj\Debug\LoginForm.pdb
+C:\Users\ciobo\Documents\GitHub\II-2019-20\LoginForm\LoginForm\bin\Debug\Database.mdf
+C:\Users\ciobo\Documents\GitHub\II-2019-20\LoginForm\LoginForm\bin\Debug\Database_log.ldf
+C:\Users\ciobo\Documents\GitHub\II-2019-20\LoginForm\LoginForm\bin\Debug\Dapper.dll
+C:\Users\ciobo\Documents\GitHub\II-2019-20\LoginForm\LoginForm\bin\Debug\Dapper.xml
+C:\Users\ciobo\Documents\GitHub\II-2019-20\LoginForm\LoginForm\obj\Debug\RegisterForm.csproj.CopyComplete

@@ -19,6 +19,11 @@ namespace LoginForm
 			InitializeComponent();
 		}
 
+		/// <summary>
+		///  Changes the color of both, the emial textBox and the text.
+		/// </summary>
+		/// <param name="sender"></param>
+		/// <param name="e"></param>
 		private void emailLogin_TextChanged(object sender, EventArgs e)
 		{
 			emailLogin.Clear();		
@@ -30,6 +35,11 @@ namespace LoginForm
 			emailLogin.ForeColor = Color.FromArgb(3, 174, 218);
 		}
 
+		/// <summary>
+		/// Changes the color of both, the password textBox and the text.
+		/// </summary>
+		/// <param name="sender"></param>
+		/// <param name="e"></param>
 		private void passwordLogin_TextChanged(object sender, EventArgs e)
 		{
 			passwordLogin.Clear();
@@ -41,9 +51,13 @@ namespace LoginForm
 			emailLogin.ForeColor = Color.WhiteSmoke;
 		}
 
+		/// <summary>
+		///  Register method - Determins if a user has been inserted or not.
+		/// </summary>
+		/// <param name="sender"></param>
+		/// <param name="e"></param>
 		private void loginButton_Click(object sender, EventArgs e)
 		{
-			//Check username is null or empty
 			if (string.IsNullOrEmpty(emailLogin.Text))
 			{
 				MessageBox.Show(this, "Please enter your email.", "Message", MessageBoxButtons.OK, MessageBoxIcon.Warning);
@@ -56,13 +70,13 @@ namespace LoginForm
 				{
 					if (db.State == ConnectionState.Closed)
 						db.Open();
-					//Excute sql query, then map data return from sql to User class
+					
 					User obj = db.Query<User>($"select *from Users where Email = '{emailLogin.Text}'", commandType: CommandType.Text).SingleOrDefault();
 					if (obj != null)
 					{
-						if (obj.Password == passwordLogin.Text)//True
+						if (obj.Password == passwordLogin.Text)
 						{
-							using (MainApp frm = new MainApp())//Open main form and hide login form
+							using (MainApp frm = new MainApp())
 							{
 								this.Hide();
 								frm.ShowDialog();
@@ -80,25 +94,19 @@ namespace LoginForm
 				MessageBox.Show(this, ex.Message, "Message", MessageBoxButtons.OK, MessageBoxIcon.Error);
 			}
 
-
-			/*	MainApp User = new MainApp();
-				this.Hide();
-				User.ShowDialog();
-				this.Close();*/
-
 		}
 
+		/// <summary>
+		/// Displays the main menu of the application
+		/// </summary>
+		/// <param name="sender"></param>
+		/// <param name="e"></param>
 		private void MainMenuButton_Click(object sender, EventArgs e)
 		{
 			FormMainMenu Menu = new FormMainMenu();
 			this.Hide();
 			Menu.ShowDialog();
 			this.Close();
-		}
-
-		private void Login_Load(object sender, EventArgs e)
-		{
-
 		}
 	}
 }

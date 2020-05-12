@@ -19,44 +19,23 @@ namespace LoginForm
             InitializeComponent();
 
         }
-        private void button1_Click(object sender, EventArgs e)
+
+        /// <summary>
+        /// Quit the application
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="e"></param>
+        private void QuitMenuBTN_Click(object sender, EventArgs e)
         {
             Application.Exit();
 
         }
 
-        private void button2_Click(object sender, EventArgs e)
-        {
-            
-        }
-
-        private void button3_Click(object sender, EventArgs e)
-        {
-            
-        }
-
-        private void button4_Click_1(object sender, EventArgs e)
-        {
-          
-        }
-
-        private void panelLoginSubMenu_Paint(object sender, PaintEventArgs e)
-        {
-
-        }
-
-      
-
-        private void button3_Click_1(object sender, EventArgs e)
-        {
-            MainApp Main = new MainApp();
-            this.Hide();
-            Main.ShowDialog();
-            this.Close();
-
-        }
-
-
+        /// <summary>
+        /// Shows the register form
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="e"></param>
         private void RegisterMenuBTN_Click(object sender, EventArgs e)
         {
             RegisterForm Register = new RegisterForm();
@@ -66,6 +45,11 @@ namespace LoginForm
 
         }
 
+        /// <summary>
+        /// Shows the Login Form
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="e"></param>
         private void LoginMenuBTN_Click(object sender, EventArgs e)
         {
             Login Log = new Login();

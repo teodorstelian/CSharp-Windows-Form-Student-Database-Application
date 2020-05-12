@@ -20,7 +20,11 @@ namespace LoginForm
 			InitializeComponent();
 		}
 
-
+		/// <summary>
+		///  Register method - Determins if a user has been inserted or not.
+		/// </summary>
+		/// <param name="sender"></param>
+		/// <param name="e"></param>
 		private async void  register_Click(object sender, EventArgs e)
 		{
 			if (string.IsNullOrEmpty(usernameRegister.Text))
@@ -47,7 +51,7 @@ namespace LoginForm
 
 
 		/// <summary>
-		///  Metoda care schimba culoarea textului din textboxul username si a panelului de dedesupt.
+		///  Changes the color of both, the username textBox and the text.
 		/// </summary>
 		/// <param name="sender"></param>
 		/// <param name="e"></param>
@@ -61,13 +65,16 @@ namespace LoginForm
 			passBarRegister.BackColor = Color.WhiteSmoke;
 			passwordRegister.ForeColor = Color.WhiteSmoke;
 
+			confirmPasswordRegister.ForeColor = Color.WhiteSmoke;
+			confirmPassBar.BackColor = Color.WhiteSmoke;
+
 			mailBarRegister.BackColor = Color.WhiteSmoke;
 			emailRegister.ForeColor = Color.WhiteSmoke;
 		}
 
 
 		/// <summary>
-		/// Metoda care schimba culoarea textului din textboxul password si a panelului de dedesupt.
+		/// Changes the color of both, the password textBox and the text.
 		/// </summary>
 		/// <param name="sender"></param>
 		/// <param name="e"></param>
@@ -81,12 +88,15 @@ namespace LoginForm
 			passBarRegister.BackColor = Color.FromArgb(3, 174, 218);
 			passwordRegister.ForeColor = Color.FromArgb(3, 174, 218);
 
+			confirmPasswordRegister.ForeColor = Color.WhiteSmoke;
+			confirmPassBar.BackColor = Color.WhiteSmoke;
+
 			mailBarRegister.BackColor = Color.WhiteSmoke;
 			emailRegister.ForeColor = Color.WhiteSmoke;
 		}
 
 		/// <summary>
-		/// Metoda care schimba culoarea textului din textboxul email si a panelului de dedesupt.
+		/// Changes the color of both, the email textBox and the text.
 		/// </summary>
 		/// <param name="sender"></param>
 		/// <param name="e"></param>
@@ -100,10 +110,18 @@ namespace LoginForm
 			passBarRegister.BackColor = Color.WhiteSmoke;
 			passwordRegister.ForeColor = Color.WhiteSmoke;
 
+			confirmPasswordRegister.ForeColor = Color.WhiteSmoke;
+			confirmPassBar.BackColor = Color.WhiteSmoke;
+
 			mailBarRegister.BackColor = Color.FromArgb(3, 174, 218);
 			emailRegister.ForeColor = Color.FromArgb(3, 174, 218);
 		}
 
+		/// <summary>
+		/// Shows the main menu of the application
+		/// </summary>
+		/// <param name="sender"></param>
+		/// <param name="e"></param>
 		private void mainMenu_Click(object sender, EventArgs e)
 		{
 			FormMainMenu Menu = new FormMainMenu();
@@ -112,5 +130,26 @@ namespace LoginForm
 			this.Close();
 		}
 
+		/// <summary>
+		/// Changes the color of both, the confirmPAssword textBox and the text.
+		/// </summary>
+		/// <param name="sender"></param>
+		/// <param name="e"></param>
+		private void confirmPassword_Click(object sender, EventArgs e)
+		{
+			confirmPasswordRegister.Clear();
+
+			userBarRegister.BackColor = Color.WhiteSmoke;
+			usernameRegister.ForeColor = Color.WhiteSmoke;
+
+			passBarRegister.BackColor = Color.WhiteSmoke;
+			passwordRegister.ForeColor = Color.WhiteSmoke;
+
+			confirmPasswordRegister.ForeColor = Color.FromArgb(3, 174, 218);
+			confirmPassBar.BackColor = Color.FromArgb(3, 174, 218);
+
+			mailBarRegister.BackColor = Color.WhiteSmoke;
+			emailRegister.ForeColor = Color.WhiteSmoke;
+		}
 	}
 }

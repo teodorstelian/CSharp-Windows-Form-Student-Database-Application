@@ -18,7 +18,9 @@ namespace LoginForm
             customizeDesing();
             WelcomeUser();
         }
-
+        /// <summary>
+        /// IN PROGRESS - Display the user inthe label
+        /// </summary>
         private void WelcomeUser()
         {
             WelcomeLabel.Text = "Hello!";
@@ -78,19 +80,5 @@ namespace LoginForm
             showSubMenu(panelLoginSubMenu);
         }
 
-        private void pictureBox1_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void panelSideMenu_Paint(object sender, PaintEventArgs e)
-        {
-
-        }
-
-        private void WelcomeLabel_Click(object sender, EventArgs e)
-        {
-
-        }
     }
 }
