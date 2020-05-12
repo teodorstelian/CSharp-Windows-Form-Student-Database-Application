@@ -50,7 +50,7 @@
             this.emailLogin.Font = new System.Drawing.Font("Georgia", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.emailLogin.ForeColor = System.Drawing.Color.LightGray;
             this.emailLogin.Location = new System.Drawing.Point(68, 160);
-            this.emailLogin.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.emailLogin.Margin = new System.Windows.Forms.Padding(2);
             this.emailLogin.Name = "emailLogin";
             this.emailLogin.Size = new System.Drawing.Size(156, 17);
             this.emailLogin.TabIndex = 24;
@@ -60,7 +60,7 @@
             // 
             this.mailBarLogin.BackColor = System.Drawing.Color.White;
             this.mailBarLogin.Location = new System.Drawing.Point(37, 185);
-            this.mailBarLogin.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.mailBarLogin.Margin = new System.Windows.Forms.Padding(2);
             this.mailBarLogin.Name = "mailBarLogin";
             this.mailBarLogin.Size = new System.Drawing.Size(188, 1);
             this.mailBarLogin.TabIndex = 23;
@@ -69,7 +69,7 @@
             // 
             this.emailImg.Image = ((System.Drawing.Image)(resources.GetObject("emailImg.Image")));
             this.emailImg.Location = new System.Drawing.Point(37, 155);
-            this.emailImg.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.emailImg.Margin = new System.Windows.Forms.Padding(2);
             this.emailImg.Name = "emailImg";
             this.emailImg.Size = new System.Drawing.Size(23, 25);
             this.emailImg.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
@@ -80,7 +80,7 @@
             // 
             this.passBarLogin.BackColor = System.Drawing.Color.White;
             this.passBarLogin.Location = new System.Drawing.Point(37, 223);
-            this.passBarLogin.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.passBarLogin.Margin = new System.Windows.Forms.Padding(2);
             this.passBarLogin.Name = "passBarLogin";
             this.passBarLogin.Size = new System.Drawing.Size(188, 1);
             this.passBarLogin.TabIndex = 21;
@@ -92,7 +92,7 @@
             this.passwordLogin.Font = new System.Drawing.Font("Georgia", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.passwordLogin.ForeColor = System.Drawing.Color.LightGray;
             this.passwordLogin.Location = new System.Drawing.Point(65, 199);
-            this.passwordLogin.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.passwordLogin.Margin = new System.Windows.Forms.Padding(2);
             this.passwordLogin.Name = "passwordLogin";
             this.passwordLogin.Size = new System.Drawing.Size(156, 17);
             this.passwordLogin.TabIndex = 20;
@@ -104,7 +104,7 @@
             this.passImg.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.passImg.Image = ((System.Drawing.Image)(resources.GetObject("passImg.Image")));
             this.passImg.Location = new System.Drawing.Point(37, 193);
-            this.passImg.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.passImg.Margin = new System.Windows.Forms.Padding(2);
             this.passImg.Name = "passImg";
             this.passImg.Size = new System.Drawing.Size(23, 25);
             this.passImg.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
@@ -115,7 +115,7 @@
             // 
             this.pictureBox1.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox1.Image")));
             this.pictureBox1.Location = new System.Drawing.Point(96, 44);
-            this.pictureBox1.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.pictureBox1.Margin = new System.Windows.Forms.Padding(2);
             this.pictureBox1.Name = "pictureBox1";
             this.pictureBox1.Size = new System.Drawing.Size(72, 64);
             this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
@@ -124,12 +124,12 @@
             // 
             // MainMenuButton
             // 
-            this.MainMenuButton.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(34)))), ((int)(((byte)(36)))), ((int)(((byte)(49)))));
+            this.MainMenuButton.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(11)))), ((int)(((byte)(7)))), ((int)(((byte)(17)))));
             this.MainMenuButton.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.MainMenuButton.Font = new System.Drawing.Font("Arial Narrow", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.MainMenuButton.ForeColor = System.Drawing.Color.LightGray;
             this.MainMenuButton.Location = new System.Drawing.Point(37, 310);
-            this.MainMenuButton.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.MainMenuButton.Margin = new System.Windows.Forms.Padding(2);
             this.MainMenuButton.Name = "MainMenuButton";
             this.MainMenuButton.Size = new System.Drawing.Size(188, 32);
             this.MainMenuButton.TabIndex = 27;
@@ -144,7 +144,7 @@
             this.loginButton.Font = new System.Drawing.Font("Arial Narrow", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.loginButton.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(34)))), ((int)(((byte)(36)))), ((int)(((byte)(49)))));
             this.loginButton.Location = new System.Drawing.Point(37, 261);
-            this.loginButton.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.loginButton.Margin = new System.Windows.Forms.Padding(2);
             this.loginButton.Name = "loginButton";
             this.loginButton.Size = new System.Drawing.Size(188, 32);
             this.loginButton.TabIndex = 26;
@@ -156,7 +156,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(34)))), ((int)(((byte)(36)))), ((int)(((byte)(49)))));
+            this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(11)))), ((int)(((byte)(7)))), ((int)(((byte)(17)))));
             this.ClientSize = new System.Drawing.Size(275, 422);
             this.Controls.Add(this.MainMenuButton);
             this.Controls.Add(this.loginButton);
@@ -168,10 +168,11 @@
             this.Controls.Add(this.passwordLogin);
             this.Controls.Add(this.passImg);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
-            this.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.Margin = new System.Windows.Forms.Padding(2);
             this.Name = "Login";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Login";
+            this.Load += new System.EventHandler(this.Login_Load);
             ((System.ComponentModel.ISupportInitialize)(this.emailImg)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.passImg)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();

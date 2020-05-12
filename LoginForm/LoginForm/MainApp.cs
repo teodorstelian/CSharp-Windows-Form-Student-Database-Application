@@ -16,6 +16,12 @@ namespace LoginForm
         {
             InitializeComponent();
             customizeDesing();
+            WelcomeUser();
+        }
+
+        private void WelcomeUser()
+        {
+            WelcomeLabel.Text = "Hello!";
         }
 
        private void customizeDesing()
@@ -73,6 +79,16 @@ namespace LoginForm
         }
 
         private void pictureBox1_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void panelSideMenu_Paint(object sender, PaintEventArgs e)
+        {
+
+        }
+
+        private void WelcomeLabel_Click(object sender, EventArgs e)
         {
 
         }

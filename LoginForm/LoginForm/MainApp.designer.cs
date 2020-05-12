@@ -31,14 +31,15 @@
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(MainApp));
             this.panelSideMenu = new System.Windows.Forms.Panel();
             this.panel1 = new System.Windows.Forms.Panel();
-            this.button1 = new System.Windows.Forms.Button();
-            this.button5 = new System.Windows.Forms.Button();
+            this.QuitButton = new System.Windows.Forms.Button();
+            this.MyAccountButton = new System.Windows.Forms.Button();
             this.panelLoginSubMenu = new System.Windows.Forms.Panel();
-            this.button4 = new System.Windows.Forms.Button();
-            this.button3 = new System.Windows.Forms.Button();
-            this.button2 = new System.Windows.Forms.Button();
+            this.TestResultsButton = new System.Windows.Forms.Button();
+            this.SignOutButton = new System.Windows.Forms.Button();
             this.panelLogo = new System.Windows.Forms.Panel();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
+            this.UniversitiesButton = new System.Windows.Forms.Button();
+            this.WelcomeLabel = new System.Windows.Forms.Label();
             this.panelSideMenu.SuspendLayout();
             this.panel1.SuspendLayout();
             this.panelLoginSubMenu.SuspendLayout();
@@ -57,100 +58,88 @@
             this.panelSideMenu.Name = "panelSideMenu";
             this.panelSideMenu.Size = new System.Drawing.Size(1067, 553);
             this.panelSideMenu.TabIndex = 0;
+            this.panelSideMenu.Paint += new System.Windows.Forms.PaintEventHandler(this.panelSideMenu_Paint);
             // 
             // panel1
             // 
-            this.panel1.Controls.Add(this.button1);
-            this.panel1.Controls.Add(this.button5);
+            this.panel1.Controls.Add(this.WelcomeLabel);
+            this.panel1.Controls.Add(this.UniversitiesButton);
+            this.panel1.Controls.Add(this.QuitButton);
+            this.panel1.Controls.Add(this.MyAccountButton);
             this.panel1.Location = new System.Drawing.Point(300, 3);
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(764, 54);
             this.panel1.TabIndex = 4;
             // 
-            // button1
+            // QuitButton
             // 
-            this.button1.Dock = System.Windows.Forms.DockStyle.Right;
-            this.button1.FlatAppearance.BorderSize = 0;
-            this.button1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button1.ForeColor = System.Drawing.Color.Gainsboro;
-            this.button1.Location = new System.Drawing.Point(658, 0);
-            this.button1.Name = "button1";
-            this.button1.Padding = new System.Windows.Forms.Padding(10, 0, 0, 0);
-            this.button1.Size = new System.Drawing.Size(106, 54);
-            this.button1.TabIndex = 1;
-            this.button1.Text = "Quit";
-            this.button1.UseVisualStyleBackColor = true;
-            this.button1.Click += new System.EventHandler(this.button1_Click);
+            this.QuitButton.Dock = System.Windows.Forms.DockStyle.Right;
+            this.QuitButton.FlatAppearance.BorderSize = 0;
+            this.QuitButton.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.QuitButton.ForeColor = System.Drawing.Color.Gainsboro;
+            this.QuitButton.Location = new System.Drawing.Point(658, 0);
+            this.QuitButton.Name = "QuitButton";
+            this.QuitButton.Padding = new System.Windows.Forms.Padding(10, 0, 0, 0);
+            this.QuitButton.Size = new System.Drawing.Size(106, 54);
+            this.QuitButton.TabIndex = 1;
+            this.QuitButton.Text = "Quit";
+            this.QuitButton.UseVisualStyleBackColor = true;
+            this.QuitButton.Click += new System.EventHandler(this.button1_Click);
             // 
-            // button5
+            // MyAccountButton
             // 
-            this.button5.Dock = System.Windows.Forms.DockStyle.Left;
-            this.button5.FlatAppearance.BorderSize = 0;
-            this.button5.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button5.ForeColor = System.Drawing.Color.Gainsboro;
-            this.button5.Location = new System.Drawing.Point(0, 0);
-            this.button5.Name = "button5";
-            this.button5.Padding = new System.Windows.Forms.Padding(10, 0, 0, 0);
-            this.button5.Size = new System.Drawing.Size(106, 54);
-            this.button5.TabIndex = 3;
-            this.button5.Text = "My Account";
-            this.button5.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.button5.UseVisualStyleBackColor = true;
-            this.button5.Click += new System.EventHandler(this.button5_Click);
+            this.MyAccountButton.Dock = System.Windows.Forms.DockStyle.Left;
+            this.MyAccountButton.FlatAppearance.BorderSize = 0;
+            this.MyAccountButton.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.MyAccountButton.ForeColor = System.Drawing.Color.Gainsboro;
+            this.MyAccountButton.Location = new System.Drawing.Point(0, 0);
+            this.MyAccountButton.Name = "MyAccountButton";
+            this.MyAccountButton.Padding = new System.Windows.Forms.Padding(10, 0, 0, 0);
+            this.MyAccountButton.Size = new System.Drawing.Size(106, 54);
+            this.MyAccountButton.TabIndex = 3;
+            this.MyAccountButton.Text = "My Account";
+            this.MyAccountButton.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.MyAccountButton.UseVisualStyleBackColor = true;
+            this.MyAccountButton.Click += new System.EventHandler(this.button5_Click);
             // 
             // panelLoginSubMenu
             // 
             this.panelLoginSubMenu.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(35)))), ((int)(((byte)(32)))), ((int)(((byte)(38)))));
-            this.panelLoginSubMenu.Controls.Add(this.button4);
-            this.panelLoginSubMenu.Controls.Add(this.button3);
-            this.panelLoginSubMenu.Controls.Add(this.button2);
+            this.panelLoginSubMenu.Controls.Add(this.TestResultsButton);
+            this.panelLoginSubMenu.Controls.Add(this.SignOutButton);
             this.panelLoginSubMenu.Location = new System.Drawing.Point(300, 63);
             this.panelLoginSubMenu.Name = "panelLoginSubMenu";
-            this.panelLoginSubMenu.Size = new System.Drawing.Size(106, 75);
+            this.panelLoginSubMenu.Size = new System.Drawing.Size(106, 54);
             this.panelLoginSubMenu.TabIndex = 2;
             this.panelLoginSubMenu.Paint += new System.Windows.Forms.PaintEventHandler(this.panelLoginSubMenu_Paint);
             // 
-            // button4
+            // TestResultsButton
             // 
-            this.button4.Dock = System.Windows.Forms.DockStyle.Top;
-            this.button4.FlatAppearance.BorderSize = 0;
-            this.button4.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button4.ForeColor = System.Drawing.Color.LightGray;
-            this.button4.Location = new System.Drawing.Point(0, 50);
-            this.button4.Name = "button4";
-            this.button4.Size = new System.Drawing.Size(106, 25);
-            this.button4.TabIndex = 2;
-            this.button4.Text = "Test Results";
-            this.button4.UseVisualStyleBackColor = true;
-            this.button4.Click += new System.EventHandler(this.button4_Click_1);
+            this.TestResultsButton.Dock = System.Windows.Forms.DockStyle.Top;
+            this.TestResultsButton.FlatAppearance.BorderSize = 0;
+            this.TestResultsButton.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.TestResultsButton.ForeColor = System.Drawing.Color.LightGray;
+            this.TestResultsButton.Location = new System.Drawing.Point(0, 25);
+            this.TestResultsButton.Name = "TestResultsButton";
+            this.TestResultsButton.Size = new System.Drawing.Size(106, 26);
+            this.TestResultsButton.TabIndex = 2;
+            this.TestResultsButton.Text = "Test Results";
+            this.TestResultsButton.UseVisualStyleBackColor = true;
+            this.TestResultsButton.Click += new System.EventHandler(this.button4_Click_1);
             // 
-            // button3
+            // SignOutButton
             // 
-            this.button3.Dock = System.Windows.Forms.DockStyle.Top;
-            this.button3.FlatAppearance.BorderSize = 0;
-            this.button3.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button3.ForeColor = System.Drawing.Color.LightGray;
-            this.button3.Location = new System.Drawing.Point(0, 25);
-            this.button3.Name = "button3";
-            this.button3.Size = new System.Drawing.Size(106, 25);
-            this.button3.TabIndex = 1;
-            this.button3.Text = "Register";
-            this.button3.UseVisualStyleBackColor = true;
-            this.button3.Click += new System.EventHandler(this.button3_Click);
-            // 
-            // button2
-            // 
-            this.button2.Dock = System.Windows.Forms.DockStyle.Top;
-            this.button2.FlatAppearance.BorderSize = 0;
-            this.button2.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button2.ForeColor = System.Drawing.Color.LightGray;
-            this.button2.Location = new System.Drawing.Point(0, 0);
-            this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(106, 25);
-            this.button2.TabIndex = 0;
-            this.button2.Text = "Login";
-            this.button2.UseVisualStyleBackColor = true;
-            this.button2.Click += new System.EventHandler(this.button2_Click);
+            this.SignOutButton.Dock = System.Windows.Forms.DockStyle.Top;
+            this.SignOutButton.FlatAppearance.BorderSize = 0;
+            this.SignOutButton.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.SignOutButton.ForeColor = System.Drawing.Color.LightGray;
+            this.SignOutButton.Location = new System.Drawing.Point(0, 0);
+            this.SignOutButton.Name = "SignOutButton";
+            this.SignOutButton.Size = new System.Drawing.Size(106, 25);
+            this.SignOutButton.TabIndex = 0;
+            this.SignOutButton.Text = "Sign Out";
+            this.SignOutButton.UseVisualStyleBackColor = true;
+            this.SignOutButton.Click += new System.EventHandler(this.button2_Click);
             // 
             // panelLogo
             // 
@@ -169,6 +158,32 @@
             this.pictureBox1.TabIndex = 0;
             this.pictureBox1.TabStop = false;
             this.pictureBox1.Click += new System.EventHandler(this.pictureBox1_Click);
+            // 
+            // UniversitiesButton
+            // 
+            this.UniversitiesButton.Dock = System.Windows.Forms.DockStyle.Left;
+            this.UniversitiesButton.FlatAppearance.BorderSize = 0;
+            this.UniversitiesButton.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.UniversitiesButton.ForeColor = System.Drawing.Color.Gainsboro;
+            this.UniversitiesButton.Location = new System.Drawing.Point(106, 0);
+            this.UniversitiesButton.Name = "UniversitiesButton";
+            this.UniversitiesButton.Padding = new System.Windows.Forms.Padding(10, 0, 0, 0);
+            this.UniversitiesButton.Size = new System.Drawing.Size(106, 54);
+            this.UniversitiesButton.TabIndex = 4;
+            this.UniversitiesButton.Text = "Universities";
+            this.UniversitiesButton.UseVisualStyleBackColor = true;
+            // 
+            // WelcomeLabel
+            // 
+            this.WelcomeLabel.Dock = System.Windows.Forms.DockStyle.Right;
+            this.WelcomeLabel.ForeColor = System.Drawing.Color.Gainsboro;
+            this.WelcomeLabel.Location = new System.Drawing.Point(552, 0);
+            this.WelcomeLabel.Name = "WelcomeLabel";
+            this.WelcomeLabel.Size = new System.Drawing.Size(106, 54);
+            this.WelcomeLabel.TabIndex = 5;
+            this.WelcomeLabel.Text = "Hello";
+            this.WelcomeLabel.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.WelcomeLabel.Click += new System.EventHandler(this.WelcomeLabel_Click);
             // 
             // MainApp
             // 
@@ -195,14 +210,15 @@
 
         private System.Windows.Forms.Panel panelSideMenu;
         private System.Windows.Forms.Panel panelLoginSubMenu;
-        private System.Windows.Forms.Button button1;
+        private System.Windows.Forms.Button QuitButton;
         private System.Windows.Forms.Panel panelLogo;
-        private System.Windows.Forms.Button button3;
-        private System.Windows.Forms.Button button2;
-        private System.Windows.Forms.Button button4;
+        private System.Windows.Forms.Button SignOutButton;
+        private System.Windows.Forms.Button TestResultsButton;
         private System.Windows.Forms.PictureBox pictureBox1;
         private System.Windows.Forms.Panel panel1;
-        private System.Windows.Forms.Button button5;
+        private System.Windows.Forms.Button MyAccountButton;
+        private System.Windows.Forms.Button UniversitiesButton;
+        private System.Windows.Forms.Label WelcomeLabel;
     }
 }
 
