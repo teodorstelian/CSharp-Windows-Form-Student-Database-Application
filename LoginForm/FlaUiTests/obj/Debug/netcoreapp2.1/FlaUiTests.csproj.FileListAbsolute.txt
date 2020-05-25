@@ -1,0 +1,16 @@
+C:\Users\Vlad\Documents\GitHub\CSharp-Windows-Form-Student-Database-Application\LoginForm\FlaUiTests\bin\Debug\netcoreapp2.1\Microsoft.VisualStudio.TestPlatform.MSTest.TestAdapter.dll
+C:\Users\Vlad\Documents\GitHub\CSharp-Windows-Form-Student-Database-Application\LoginForm\FlaUiTests\bin\Debug\netcoreapp2.1\Microsoft.VisualStudio.TestPlatform.MSTestAdapter.PlatformServices.Interface.dll
+C:\Users\Vlad\Documents\GitHub\CSharp-Windows-Form-Student-Database-Application\LoginForm\FlaUiTests\bin\Debug\netcoreapp2.1\Microsoft.VisualStudio.TestPlatform.MSTestAdapter.PlatformServices.dll
+C:\Users\Vlad\Documents\GitHub\CSharp-Windows-Form-Student-Database-Application\LoginForm\FlaUiTests\bin\Debug\netcoreapp2.1\FlaUiTests.deps.json
+C:\Users\Vlad\Documents\GitHub\CSharp-Windows-Form-Student-Database-Application\LoginForm\FlaUiTests\bin\Debug\netcoreapp2.1\FlaUiTests.runtimeconfig.json
+C:\Users\Vlad\Documents\GitHub\CSharp-Windows-Form-Student-Database-Application\LoginForm\FlaUiTests\bin\Debug\netcoreapp2.1\FlaUiTests.runtimeconfig.dev.json
+C:\Users\Vlad\Documents\GitHub\CSharp-Windows-Form-Student-Database-Application\LoginForm\FlaUiTests\bin\Debug\netcoreapp2.1\FlaUiTests.dll
+C:\Users\Vlad\Documents\GitHub\CSharp-Windows-Form-Student-Database-Application\LoginForm\FlaUiTests\obj\Debug\netcoreapp2.1\FlaUiTests.csprojAssemblyReference.cache
+C:\Users\Vlad\Documents\GitHub\CSharp-Windows-Form-Student-Database-Application\LoginForm\FlaUiTests\obj\Debug\netcoreapp2.1\FlaUiTests.csproj.CoreCompileInputs.cache
+C:\Users\Vlad\Documents\GitHub\CSharp-Windows-Form-Student-Database-Application\LoginForm\FlaUiTests\obj\Debug\netcoreapp2.1\FlaUiTests.AssemblyInfoInputs.cache
+C:\Users\Vlad\Documents\GitHub\CSharp-Windows-Form-Student-Database-Application\LoginForm\FlaUiTests\obj\Debug\netcoreapp2.1\FlaUiTests.AssemblyInfo.cs
+C:\Users\Vlad\Documents\GitHub\CSharp-Windows-Form-Student-Database-Application\LoginForm\FlaUiTests\bin\Debug\netcoreapp2.1\FlaUiTests.pdb
+C:\Users\Vlad\Documents\GitHub\CSharp-Windows-Form-Student-Database-Application\LoginForm\FlaUiTests\obj\Debug\netcoreapp2.1\FlaUiTests.dll
+C:\Users\Vlad\Documents\GitHub\CSharp-Windows-Form-Student-Database-Application\LoginForm\FlaUiTests\obj\Debug\netcoreapp2.1\FlaUiTests.pdb
+C:\Users\Vlad\Documents\GitHub\CSharp-Windows-Form-Student-Database-Application\LoginForm\FlaUiTests\bin\Debug\netcoreapp2.1\testhost.exe
+C:\Users\Vlad\Documents\GitHub\CSharp-Windows-Form-Student-Database-Application\LoginForm\FlaUiTests\bin\Debug\netcoreapp2.1\testhost.dll

@@ -4,6 +4,7 @@ using System.ComponentModel;
 using System.Data;
 using System.Drawing;
 using System.Linq;
+using System.Runtime.InteropServices;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
@@ -14,7 +15,12 @@ namespace LoginForm
 {
 	public partial class Login : Form
 	{
-		public Login()
+        [DllImport("User32.dll")]
+        public static extern bool ReleaseCapture();
+        [DllImport("User32.dll")]
+        public static extern int SendMessage(IntPtr Handle, int Msg, int Param1, int Param2);
+
+        public Login()
 		{
 			InitializeComponent();
 		}
@@ -108,5 +114,14 @@ namespace LoginForm
 			Menu.ShowDialog();
 			this.Close();
 		}
-	}
+
+        private void Login_MouseDown(object sender, MouseEventArgs e)
+        {
+            if (e.Button == MouseButtons.Left)
+            {
+                ReleaseCapture();
+                SendMessage(Handle, 0xA1, 0x2, 0);
+            }
+        }
+    }
 }
