@@ -1,0 +1,91 @@
+{
+  "format": 1,
+  "restore": {
+    "C:\\Users\\ciobo\\Documents\\GitHub\\II-2019-20\\LoginForm\\FlaUiTests\\StudentHelperTests.csproj": {}
+  },
+  "projects": {
+    "C:\\Users\\ciobo\\Documents\\GitHub\\II-2019-20\\LoginForm\\FlaUiTests\\StudentHelperTests.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "C:\\Users\\ciobo\\Documents\\GitHub\\II-2019-20\\LoginForm\\FlaUiTests\\StudentHelperTests.csproj",
+        "projectName": "StudentHelperTests",
+        "projectPath": "C:\\Users\\ciobo\\Documents\\GitHub\\II-2019-20\\LoginForm\\FlaUiTests\\StudentHelperTests.csproj",
+        "packagesPath": "C:\\Users\\ciobo\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\ciobo\\Documents\\GitHub\\II-2019-20\\LoginForm\\FlaUiTests\\obj\\",
+        "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Microsoft\\Xamarin\\NuGet\\"
+        ],
+        "configFilePaths": [
+          "C:\\Users\\ciobo\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Xamarin.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "netcoreapp2.1"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "netcoreapp2.1": {
+            "projectReferences": {}
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "netcoreapp2.1": {
+          "dependencies": {
+            "FlaUI.Core": {
+              "target": "Package",
+              "version": "[3.1.0, )"
+            },
+            "FlaUI.UIA2": {
+              "target": "Package",
+              "version": "[3.1.0, )"
+            },
+            "FlaUI.UIA3": {
+              "target": "Package",
+              "version": "[3.1.0, )"
+            },
+            "MSTest.TestAdapter": {
+              "target": "Package",
+              "version": "[2.1.1, )"
+            },
+            "MSTest.TestFramework": {
+              "target": "Package",
+              "version": "[2.1.1, )"
+            },
+            "Microsoft.NET.Test.Sdk": {
+              "target": "Package",
+              "version": "[16.6.1, )"
+            },
+            "Microsoft.NETCore.App": {
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[2.1.0, )",
+              "autoReferenced": true
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.1.201\\RuntimeIdentifierGraph.json"
+        }
+      }
+    }
+  }
+}

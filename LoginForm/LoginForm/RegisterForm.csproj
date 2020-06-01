@@ -55,6 +55,9 @@
     <Reference Include="Dapper, Version=2.0.0.0, Culture=neutral, processorArchitecture=MSIL">
       <HintPath>..\packages\Dapper.2.0.35\lib\net461\Dapper.dll</HintPath>
     </Reference>
+    <Reference Include="Facebook.Winforms">
+      <HintPath>..\..\..\..\..\Downloads\FacebookToolkit\sourceCode\sourceCode\MAIN\Samples\lib\Facebook.Winforms.dll</HintPath>
+    </Reference>
     <Reference Include="FlaUI.Core, Version=3.1.0.0, Culture=neutral, processorArchitecture=MSIL">
       <HintPath>..\packages\FlaUI.Core.3.1.0\lib\net45\FlaUI.Core.dll</HintPath>
     </Reference>
@@ -73,6 +76,7 @@
     <Reference Include="System" />
     <Reference Include="System.Configuration" />
     <Reference Include="System.Core" />
+    <Reference Include="System.Design" />
     <Reference Include="System.IO.Compression" />
     <Reference Include="System.Management" />
     <Reference Include="System.Xml.Linq" />

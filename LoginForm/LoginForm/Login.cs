@@ -10,6 +10,7 @@ using System.Threading.Tasks;
 using System.Windows.Forms;
 using System.Data.SqlClient;
 using Dapper;
+using System.Text.RegularExpressions;
 
 namespace LoginForm
 {
@@ -20,9 +21,16 @@ namespace LoginForm
         [DllImport("User32.dll")]
         public static extern int SendMessage(IntPtr Handle, int Msg, int Param1, int Param2);
 
-        public Login()
+		public Login()
 		{
 			InitializeComponent();
+
+			emailLogin.ForeColor = Color.FromArgb(3, 174, 218);
+			emailLogin.Text = "Email";
+
+			passwordLogin.ForeColor = Color.FromArgb(3, 174, 218);
+			passwordLogin.UseSystemPasswordChar = false;
+			passwordLogin.Text = "Password";
 		}
 
 		/// <summary>
@@ -66,10 +74,27 @@ namespace LoginForm
 		{
 			if (string.IsNullOrEmpty(emailLogin.Text))
 			{
-				MessageBox.Show(this, "Please enter your email.", "Message", MessageBoxButtons.OK, MessageBoxIcon.Warning);
-				emailLogin.Focus();
+				passwordLoginError.Clear();
+				emailLoginError.Text = "Please enter your email.";
+				return;
+
+			}
+			else if (string.IsNullOrEmpty(passwordLogin.Text))
+			{
+				emailLoginError.Clear();
+				passwordLoginError.Text = "Please enter your email";
 				return;
 			}
+
+			Regex reg = new Regex(@"^[A-Z0-9._%+-]+@[A-Z0-9.-]+\.[A-Z]{2,6}$", RegexOptions.IgnoreCase);
+
+			if (reg.IsMatch(emailLogin.Text) == false)
+			{
+				emailLoginError.Clear();
+				emailLoginError.Text = "Email is not valid";
+				return;
+			}
+
 			try
 			{
 				using (IDbConnection db = new SqlConnection(AppHelper.ConnectionString))
@@ -89,10 +114,10 @@ namespace LoginForm
 							}
 						}
 						else
-							MessageBox.Show(this, "Your username and password don't match.", "Message", MessageBoxButtons.OK, MessageBoxIcon.Information);
+							passwordLoginError.Text = "Your username and password don't match.";
 					}
 					else
-						MessageBox.Show(this, "Your username and password don't match.", "Message", MessageBoxButtons.OK, MessageBoxIcon.Information);
+						passwordLoginError.Text = "Your username and password don't match.";
 				}
 			}
 			catch (Exception ex)
