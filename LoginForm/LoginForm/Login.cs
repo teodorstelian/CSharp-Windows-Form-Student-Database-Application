@@ -88,7 +88,7 @@ namespace LoginForm
 
 			Regex reg = new Regex(@"^[A-Z0-9._%+-]+@[A-Z0-9.-]+\.[A-Z]{2,6}$", RegexOptions.IgnoreCase);
 
-			if (reg.IsMatch(emailLogin.Text) == false)
+			if (reg.IsMatch(emailLogin.Text) == false && emailLogin.Text != "admin")  // Am adaugat aici exceptia pentru cand esti admin
 			{
 				emailLoginError.Clear();
 				emailLoginError.Text = "Email is not valid";

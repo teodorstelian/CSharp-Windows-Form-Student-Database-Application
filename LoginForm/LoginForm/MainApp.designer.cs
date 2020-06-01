@@ -95,6 +95,7 @@
             this.UniversitiesButton.TabIndex = 4;
             this.UniversitiesButton.Text = "Universities";
             this.UniversitiesButton.UseVisualStyleBackColor = true;
+            this.UniversitiesButton.Click += new System.EventHandler(this.UniversitiesButton_Click);
             // 
             // QuitButton
             // 

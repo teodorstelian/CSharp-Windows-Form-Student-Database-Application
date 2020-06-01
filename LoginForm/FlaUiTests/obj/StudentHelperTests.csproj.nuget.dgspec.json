@@ -1,25 +1,21 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\ciobo\\Documents\\GitHub\\II-2019-20\\LoginForm\\FlaUiTests\\StudentHelperTests.csproj": {}
+    "C:\\Users\\Teo\\Documents\\GitHub\\II-2019-20\\LoginForm\\FlaUiTests\\StudentHelperTests.csproj": {}
   },
   "projects": {
-    "C:\\Users\\ciobo\\Documents\\GitHub\\II-2019-20\\LoginForm\\FlaUiTests\\StudentHelperTests.csproj": {
+    "C:\\Users\\Teo\\Documents\\GitHub\\II-2019-20\\LoginForm\\FlaUiTests\\StudentHelperTests.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\ciobo\\Documents\\GitHub\\II-2019-20\\LoginForm\\FlaUiTests\\StudentHelperTests.csproj",
+        "projectUniqueName": "C:\\Users\\Teo\\Documents\\GitHub\\II-2019-20\\LoginForm\\FlaUiTests\\StudentHelperTests.csproj",
         "projectName": "StudentHelperTests",
-        "projectPath": "C:\\Users\\ciobo\\Documents\\GitHub\\II-2019-20\\LoginForm\\FlaUiTests\\StudentHelperTests.csproj",
-        "packagesPath": "C:\\Users\\ciobo\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\ciobo\\Documents\\GitHub\\II-2019-20\\LoginForm\\FlaUiTests\\obj\\",
+        "projectPath": "C:\\Users\\Teo\\Documents\\GitHub\\II-2019-20\\LoginForm\\FlaUiTests\\StudentHelperTests.csproj",
+        "packagesPath": "C:\\Users\\Teo\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\Teo\\Documents\\GitHub\\II-2019-20\\LoginForm\\FlaUiTests\\obj\\",
         "projectStyle": "PackageReference",
-        "fallbackFolders": [
-          "C:\\Microsoft\\Xamarin\\NuGet\\"
-        ],
         "configFilePaths": [
-          "C:\\Users\\ciobo\\AppData\\Roaming\\NuGet\\NuGet.Config",
-          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config",
-          "C:\\Program Files (x86)\\NuGet\\Config\\Xamarin.Offline.config"
+          "C:\\Users\\Teo\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
           "netcoreapp2.1"

@@ -64,7 +64,10 @@ namespace LoginForm
 
         private void button2_Click(object sender, EventArgs e)
         {
-            hideSubMenu();
+            FormMainMenu Menu = new FormMainMenu();
+            this.Hide();
+            Menu.ShowDialog();
+            this.Close();
         }
 
         private void button3_Click(object sender, EventArgs e)
@@ -94,6 +97,14 @@ namespace LoginForm
                 ReleaseCapture();
                 SendMessage(Handle, 0xA1, 0x2, 0);
             }
+        }
+
+        private void UniversitiesButton_Click(object sender, EventArgs e)
+        {
+            ListOfUniversities Univ = new ListOfUniversities();
+            this.Hide();
+            Univ.ShowDialog();
+            this.Close();
         }
     }
 }

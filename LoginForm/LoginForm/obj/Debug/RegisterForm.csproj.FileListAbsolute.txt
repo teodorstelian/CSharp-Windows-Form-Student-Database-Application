@@ -114,3 +114,12 @@ C:\Users\ciobo\Documents\GitHub\II-2019-20\LoginForm\LoginForm\bin\Debug\FlaUI.U
 C:\Users\ciobo\Documents\GitHub\II-2019-20\LoginForm\LoginForm\bin\Debug\FlaUI.UIA3.xml
 C:\Users\ciobo\Documents\GitHub\II-2019-20\LoginForm\LoginForm\bin\Debug\Facebook.Winforms.dll
 C:\Users\ciobo\Documents\GitHub\II-2019-20\LoginForm\LoginForm\bin\Debug\Facebook.dll
+C:\Users\Teo\Documents\GitHub\II-2019-20\LoginForm\LoginForm\bin\Debug\FlaUI.Core.dll
+C:\Users\Teo\Documents\GitHub\II-2019-20\LoginForm\LoginForm\bin\Debug\FlaUI.UIA2.dll
+C:\Users\Teo\Documents\GitHub\II-2019-20\LoginForm\LoginForm\bin\Debug\FlaUI.UIA3.dll
+C:\Users\Teo\Documents\GitHub\II-2019-20\LoginForm\LoginForm\bin\Debug\Interop.UIAutomationClient.dll
+C:\Users\Teo\Documents\GitHub\II-2019-20\LoginForm\LoginForm\bin\Debug\Facebook.dll
+C:\Users\Teo\Documents\GitHub\II-2019-20\LoginForm\LoginForm\bin\Debug\FlaUI.Core.xml
+C:\Users\Teo\Documents\GitHub\II-2019-20\LoginForm\LoginForm\bin\Debug\FlaUI.UIA2.xml
+C:\Users\Teo\Documents\GitHub\II-2019-20\LoginForm\LoginForm\bin\Debug\FlaUI.UIA3.xml
+C:\Users\Teo\Documents\GitHub\II-2019-20\LoginForm\LoginForm\obj\Debug\LoginForm.ListOfUniversities.resources
