@@ -52,20 +52,21 @@ namespace LoginForm
 		{
 			if (string.IsNullOrEmpty(usernameRegister.Text))
 			{
-				passwordRegisterError.Clear();
+				closeErrorTb();
 				usernameRegisterError.Text = "Please enter your username";
 				return;
 
 			}
 			else if (string.IsNullOrEmpty(passwordRegister.Text))
 			{
-				usernameRegisterError.Clear();
+				closeErrorTb();
 				passwordRegisterError.Text = "Please enter your password";
 				return;
 			}
 
 			if (passwordRegister.Text != confirmPasswordRegister.Text)
 			{
+				closeErrorTb();
 				confirmPasswordRegisterError.Text = "Password don't match!";
 				return;
 			}
@@ -74,9 +75,7 @@ namespace LoginForm
 
 			if (reg.IsMatch(emailRegister.Text) == false)
 			{
-				usernameRegisterError.Clear();
-				passwordRegisterError.Clear();
-				confirmPasswordRegisterError.Clear();
+				closeErrorTb();
 				emailRegisterError.Text = "Email is not valid";
 				return;
 			}
@@ -90,6 +89,14 @@ namespace LoginForm
 			}
 			else
 				MessageBox.Show("Error", "Message", MessageBoxButtons.OK, MessageBoxIcon.Information);
+		}
+
+		private void closeErrorTb()
+		{
+			usernameRegisterError.Clear();
+			passwordRegisterError.Clear();
+			confirmPasswordRegisterError.Clear();
+			emailRegisterError.Clear();
 		}
 
 		/// <summary>
@@ -159,6 +166,13 @@ namespace LoginForm
 
 			mailBarRegister.BackColor = Color.WhiteSmoke;
 			emailRegister.ForeColor = Color.WhiteSmoke;
+
+			closeErrorTb();
+			if (Control.IsKeyLocked(Keys.CapsLock))
+			{
+				passwordRegisterError.Text = "Caps is ON.";
+			}
+			
 		}
 
 		/// <summary>
@@ -181,6 +195,12 @@ namespace LoginForm
 
 			mailBarRegister.BackColor = Color.WhiteSmoke;
 			emailRegister.ForeColor = Color.WhiteSmoke;
+
+			closeErrorTb();
+			if (Control.IsKeyLocked(Keys.CapsLock))
+			{
+				confirmPasswordRegisterError.Text = "Caps is ON.";
+			}
 		}
 
 		/// <summary>

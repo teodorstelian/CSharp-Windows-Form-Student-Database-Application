@@ -33,7 +33,6 @@
 			this.register = new System.Windows.Forms.Button();
 			this.mainMenu = new System.Windows.Forms.Button();
 			this.label1 = new System.Windows.Forms.Label();
-			this.instagram = new System.Windows.Forms.PictureBox();
 			this.facebook = new System.Windows.Forms.PictureBox();
 			this.pictureBox1 = new System.Windows.Forms.PictureBox();
 			this.confirmPassBar = new System.Windows.Forms.FlowLayoutPanel();
@@ -53,7 +52,6 @@
 			this.confirmPasswordRegisterError = new System.Windows.Forms.TextBox();
 			this.emailRegisterError = new System.Windows.Forms.TextBox();
 			this.facebookService1 = new Facebook.Winforms.Components.FacebookService(this.components);
-			((System.ComponentModel.ISupportInitialize)(this.instagram)).BeginInit();
 			((System.ComponentModel.ISupportInitialize)(this.facebook)).BeginInit();
 			((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
 			((System.ComponentModel.ISupportInitialize)(this.confirmPassImg)).BeginInit();
@@ -97,28 +95,17 @@
 			this.label1.AutoSize = true;
 			this.label1.Font = new System.Drawing.Font("Arial Narrow", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
 			this.label1.ForeColor = System.Drawing.Color.LightGray;
-			this.label1.Location = new System.Drawing.Point(170, 493);
+			this.label1.Location = new System.Drawing.Point(166, 495);
 			this.label1.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
 			this.label1.Name = "label1";
 			this.label1.Size = new System.Drawing.Size(80, 20);
 			this.label1.TabIndex = 14;
 			this.label1.Text = "register with";
 			// 
-			// instagram
-			// 
-			this.instagram.Image = ((System.Drawing.Image)(resources.GetObject("instagram.Image")));
-			this.instagram.Location = new System.Drawing.Point(255, 529);
-			this.instagram.Margin = new System.Windows.Forms.Padding(2);
-			this.instagram.Name = "instagram";
-			this.instagram.Size = new System.Drawing.Size(43, 46);
-			this.instagram.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-			this.instagram.TabIndex = 13;
-			this.instagram.TabStop = false;
-			// 
 			// facebook
 			// 
 			this.facebook.Image = ((System.Drawing.Image)(resources.GetObject("facebook.Image")));
-			this.facebook.Location = new System.Drawing.Point(110, 529);
+			this.facebook.Location = new System.Drawing.Point(188, 543);
 			this.facebook.Margin = new System.Windows.Forms.Padding(2);
 			this.facebook.Name = "facebook";
 			this.facebook.Size = new System.Drawing.Size(43, 46);
@@ -358,7 +345,6 @@
 			this.Controls.Add(this.usernameRegister);
 			this.Controls.Add(this.userImg);
 			this.Controls.Add(this.label1);
-			this.Controls.Add(this.instagram);
 			this.Controls.Add(this.mainMenu);
 			this.Controls.Add(this.facebook);
 			this.Controls.Add(this.register);
@@ -369,7 +355,6 @@
 			this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
 			this.Text = "Form1";
 			this.MouseDown += new System.Windows.Forms.MouseEventHandler(this.RegisterForm_MouseDown);
-			((System.ComponentModel.ISupportInitialize)(this.instagram)).EndInit();
 			((System.ComponentModel.ISupportInitialize)(this.facebook)).EndInit();
 			((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
 			((System.ComponentModel.ISupportInitialize)(this.confirmPassImg)).EndInit();
@@ -387,7 +372,6 @@
 		private System.Windows.Forms.Button register;
 		private System.Windows.Forms.PictureBox facebook;
 		private System.Windows.Forms.Button mainMenu;
-		private System.Windows.Forms.PictureBox instagram;
 		private System.Windows.Forms.Label label1;
 		private System.Windows.Forms.FlowLayoutPanel confirmPassBar;
 		private System.Windows.Forms.TextBox confirmPasswordRegister;

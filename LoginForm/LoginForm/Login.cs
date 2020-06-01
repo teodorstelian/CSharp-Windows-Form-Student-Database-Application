@@ -33,6 +33,12 @@ namespace LoginForm
 			passwordLogin.Text = "Password";
 		}
 
+		private void closeErrorTb()
+		{
+			emailLoginError.Clear();
+			passwordLoginError.Clear();
+		}
+
 		/// <summary>
 		///  Changes the color of both, the emial textBox and the text.
 		/// </summary>
@@ -63,6 +69,12 @@ namespace LoginForm
 
 			mailBarLogin.BackColor = Color.WhiteSmoke;
 			emailLogin.ForeColor = Color.WhiteSmoke;
+
+			closeErrorTb();
+			if (Control.IsKeyLocked(Keys.CapsLock))
+			{
+				passwordLoginError.Text = "Caps is ON.";
+			}
 		}
 
 		/// <summary>
@@ -74,14 +86,14 @@ namespace LoginForm
 		{
 			if (string.IsNullOrEmpty(emailLogin.Text))
 			{
-				passwordLoginError.Clear();
+				closeErrorTb();
 				emailLoginError.Text = "Please enter your email.";
 				return;
 
 			}
 			else if (string.IsNullOrEmpty(passwordLogin.Text))
 			{
-				emailLoginError.Clear();
+				closeErrorTb();
 				passwordLoginError.Text = "Please enter your email";
 				return;
 			}
@@ -90,7 +102,7 @@ namespace LoginForm
 
 			if (reg.IsMatch(emailLogin.Text) == false && emailLogin.Text != "admin")  // Am adaugat aici exceptia pentru cand esti admin
 			{
-				emailLoginError.Clear();
+				closeErrorTb();
 				emailLoginError.Text = "Email is not valid";
 				return;
 			}

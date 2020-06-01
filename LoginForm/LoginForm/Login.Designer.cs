@@ -56,6 +56,7 @@
 			this.emailLogin.Name = "emailLogin";
 			this.emailLogin.Size = new System.Drawing.Size(156, 17);
 			this.emailLogin.TabIndex = 24;
+			this.emailLogin.TabStop = false;
 			this.emailLogin.Click += new System.EventHandler(this.emailLogin_TextChanged);
 			// 
 			// mailBarLogin
@@ -98,6 +99,7 @@
 			this.passwordLogin.Name = "passwordLogin";
 			this.passwordLogin.Size = new System.Drawing.Size(156, 17);
 			this.passwordLogin.TabIndex = 20;
+			this.passwordLogin.TabStop = false;
 			this.passwordLogin.UseSystemPasswordChar = true;
 			this.passwordLogin.Click += new System.EventHandler(this.passwordLogin_TextChanged);
 			// 
