@@ -93,6 +93,12 @@
     <Reference Include="WindowsBase" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="AbortForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AbortForm.Designer.cs">
+      <DependentUpon>AbortForm.cs</DependentUpon>
+    </Compile>
     <Compile Include="AppDataSet.Designer.cs">
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
