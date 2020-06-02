@@ -1,0 +1,43 @@
+E:\an 3 sem 2\Industrial Informatics - II\proiect\actual\II PROIECT\Chestionar2\bin\Debug\Chestionar2.mdf
+E:\an 3 sem 2\Industrial Informatics - II\proiect\actual\II PROIECT\Chestionar2\bin\Debug\Chestionar2_log.ldf
+E:\an 3 sem 2\Industrial Informatics - II\proiect\actual\II PROIECT\Chestionar2\bin\Debug\Chestionar2.exe.config
+E:\an 3 sem 2\Industrial Informatics - II\proiect\actual\II PROIECT\Chestionar2\bin\Debug\Chestionar2.exe
+E:\an 3 sem 2\Industrial Informatics - II\proiect\actual\II PROIECT\Chestionar2\bin\Debug\Chestionar2.pdb
+E:\an 3 sem 2\Industrial Informatics - II\proiect\actual\II PROIECT\Chestionar2\obj\Debug\Chestionar2.csprojAssemblyReference.cache
+E:\an 3 sem 2\Industrial Informatics - II\proiect\actual\II PROIECT\Chestionar2\obj\Debug\Chestionar2.Form1.resources
+E:\an 3 sem 2\Industrial Informatics - II\proiect\actual\II PROIECT\Chestionar2\obj\Debug\Chestionar2.Properties.Resources.resources
+E:\an 3 sem 2\Industrial Informatics - II\proiect\actual\II PROIECT\Chestionar2\obj\Debug\Chestionar2.csproj.GenerateResource.cache
+E:\an 3 sem 2\Industrial Informatics - II\proiect\actual\II PROIECT\Chestionar2\obj\Debug\Chestionar2.csproj.CoreCompileInputs.cache
+E:\an 3 sem 2\Industrial Informatics - II\proiect\actual\II PROIECT\Chestionar2\obj\Debug\Chestionar2.exe
+E:\an 3 sem 2\Industrial Informatics - II\proiect\actual\II PROIECT\Chestionar2\obj\Debug\Chestionar2.pdb
+E:\an 3 sem 2\Industrial Informatics - II\proiect\actual\II PROIECT\Chestionar2\obj\Debug\Chestionar2.Rezultate.resources
+C:\Users\filda\Desktop\Chestionar2\Chestionar2\bin\Debug\Chestionar2.mdf
+C:\Users\filda\Desktop\Chestionar2\Chestionar2\bin\Debug\Chestionar2_log.ldf
+C:\Users\filda\Desktop\Chestionar2\Chestionar2\bin\Debug\Chestionar2.exe.config
+C:\Users\filda\Desktop\Chestionar2\Chestionar2\bin\Debug\Chestionar2.exe
+C:\Users\filda\Desktop\Chestionar2\Chestionar2\bin\Debug\Chestionar2.pdb
+C:\Users\filda\Desktop\Chestionar2\Chestionar2\obj\Debug\Chestionar2.csprojAssemblyReference.cache
+C:\Users\filda\Desktop\Chestionar2\Chestionar2\obj\Debug\Chestionar2.Properties.Resources.resources
+C:\Users\filda\Desktop\Chestionar2\Chestionar2\obj\Debug\Chestionar2.Rezultate.resources
+C:\Users\filda\Desktop\Chestionar2\Chestionar2\obj\Debug\Chestionar2.csproj.GenerateResource.cache
+C:\Users\filda\Desktop\Chestionar2\Chestionar2\obj\Debug\Chestionar2.csproj.CoreCompileInputs.cache
+C:\Users\filda\Desktop\Chestionar2\Chestionar2\obj\Debug\Chestionar2.exe
+C:\Users\filda\Desktop\Chestionar2\Chestionar2\obj\Debug\Chestionar2.pdb
+C:\Users\filda\Desktop\Chestionar2\Chestionar2\bin\Debug\Database1.mdf
+C:\Users\filda\Desktop\Chestionar2\Chestionar2\bin\Debug\Database1_log.ldf
+C:\Users\filda\Desktop\Chestionar2\Chestionar2\obj\Debug\Chestionar2.IntrebariChestionar2.resources
+E:\an 3 sem 2\Industrial Informatics - II\proiect\actual\Chestionar2 ultima versiune\VERSIUNE 5\Chestionar2\Chestionar2\bin\Debug\Chestionar2.mdf
+E:\an 3 sem 2\Industrial Informatics - II\proiect\actual\Chestionar2 ultima versiune\VERSIUNE 5\Chestionar2\Chestionar2\bin\Debug\Chestionar2_log.ldf
+E:\an 3 sem 2\Industrial Informatics - II\proiect\actual\Chestionar2 ultima versiune\VERSIUNE 5\Chestionar2\Chestionar2\bin\Debug\Database1.mdf
+E:\an 3 sem 2\Industrial Informatics - II\proiect\actual\Chestionar2 ultima versiune\VERSIUNE 5\Chestionar2\Chestionar2\bin\Debug\Database1_log.ldf
+E:\an 3 sem 2\Industrial Informatics - II\proiect\actual\Chestionar2 ultima versiune\VERSIUNE 5\Chestionar2\Chestionar2\bin\Debug\Chestionar2.exe.config
+E:\an 3 sem 2\Industrial Informatics - II\proiect\actual\Chestionar2 ultima versiune\VERSIUNE 5\Chestionar2\Chestionar2\bin\Debug\Chestionar2.exe
+E:\an 3 sem 2\Industrial Informatics - II\proiect\actual\Chestionar2 ultima versiune\VERSIUNE 5\Chestionar2\Chestionar2\bin\Debug\Chestionar2.pdb
+E:\an 3 sem 2\Industrial Informatics - II\proiect\actual\Chestionar2 ultima versiune\VERSIUNE 5\Chestionar2\Chestionar2\obj\Debug\Chestionar2.csprojAssemblyReference.cache
+E:\an 3 sem 2\Industrial Informatics - II\proiect\actual\Chestionar2 ultima versiune\VERSIUNE 5\Chestionar2\Chestionar2\obj\Debug\Chestionar2.IntrebariChestionar2.resources
+E:\an 3 sem 2\Industrial Informatics - II\proiect\actual\Chestionar2 ultima versiune\VERSIUNE 5\Chestionar2\Chestionar2\obj\Debug\Chestionar2.Properties.Resources.resources
+E:\an 3 sem 2\Industrial Informatics - II\proiect\actual\Chestionar2 ultima versiune\VERSIUNE 5\Chestionar2\Chestionar2\obj\Debug\Chestionar2.Rezultate.resources
+E:\an 3 sem 2\Industrial Informatics - II\proiect\actual\Chestionar2 ultima versiune\VERSIUNE 5\Chestionar2\Chestionar2\obj\Debug\Chestionar2.csproj.GenerateResource.cache
+E:\an 3 sem 2\Industrial Informatics - II\proiect\actual\Chestionar2 ultima versiune\VERSIUNE 5\Chestionar2\Chestionar2\obj\Debug\Chestionar2.csproj.CoreCompileInputs.cache
+E:\an 3 sem 2\Industrial Informatics - II\proiect\actual\Chestionar2 ultima versiune\VERSIUNE 5\Chestionar2\Chestionar2\obj\Debug\Chestionar2.exe
+E:\an 3 sem 2\Industrial Informatics - II\proiect\actual\Chestionar2 ultima versiune\VERSIUNE 5\Chestionar2\Chestionar2\obj\Debug\Chestionar2.pdb
