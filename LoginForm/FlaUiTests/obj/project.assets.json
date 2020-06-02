@@ -4919,23 +4919,23 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\dania\\.nuget\\packages\\": {},
+    "C:\\Users\\Vlad\\.nuget\\packages\\": {},
     "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "D:\\Documents\\GitHub\\CSharp-Windows-Form-Student-Database-Application\\LoginForm\\FlaUiTests\\StudentHelperTests.csproj",
+      "projectUniqueName": "C:\\Users\\Vlad\\Documents\\GitHub\\CSharp-Windows-Form-Student-Database-Application\\LoginForm\\FlaUiTests\\StudentHelperTests.csproj",
       "projectName": "StudentHelperTests",
-      "projectPath": "D:\\Documents\\GitHub\\CSharp-Windows-Form-Student-Database-Application\\LoginForm\\FlaUiTests\\StudentHelperTests.csproj",
-      "packagesPath": "C:\\Users\\dania\\.nuget\\packages\\",
-      "outputPath": "D:\\Documents\\GitHub\\CSharp-Windows-Form-Student-Database-Application\\LoginForm\\FlaUiTests\\obj\\",
+      "projectPath": "C:\\Users\\Vlad\\Documents\\GitHub\\CSharp-Windows-Form-Student-Database-Application\\LoginForm\\FlaUiTests\\StudentHelperTests.csproj",
+      "packagesPath": "C:\\Users\\Vlad\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\Vlad\\Documents\\GitHub\\CSharp-Windows-Form-Student-Database-Application\\LoginForm\\FlaUiTests\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
       ],
       "configFilePaths": [
-        "C:\\Users\\dania\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\Vlad\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [

@@ -30,6 +30,8 @@
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(MainApp));
             this.panelSideMenu = new System.Windows.Forms.Panel();
+            this.checkBox_NU = new System.Windows.Forms.CheckBox();
+            this.checkBox_DA = new System.Windows.Forms.CheckBox();
             this.lbl_PB_Category = new System.Windows.Forms.Label();
             this.lbl_PB_Total = new System.Windows.Forms.Label();
             this.progressBar_Total = new System.Windows.Forms.ProgressBar();
@@ -57,8 +59,6 @@
             this.SignOutButton = new System.Windows.Forms.Button();
             this.panelLogo = new System.Windows.Forms.Panel();
             this.pb_StudentHelperLogo = new System.Windows.Forms.PictureBox();
-            this.checkBox_NU = new System.Windows.Forms.CheckBox();
-            this.checkBox_DA = new System.Windows.Forms.CheckBox();
             this.panelSideMenu.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.trackBar_Choice)).BeginInit();
             this.panel1.SuspendLayout();
@@ -98,6 +98,38 @@
             this.panelSideMenu.Size = new System.Drawing.Size(1067, 554);
             this.panelSideMenu.TabIndex = 0;
             this.panelSideMenu.MouseDown += new System.Windows.Forms.MouseEventHandler(this.panelSideMenu_MouseDown);
+            // 
+            // checkBox_NU
+            // 
+            this.checkBox_NU.AutoSize = true;
+            this.checkBox_NU.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(11)))), ((int)(((byte)(7)))), ((int)(((byte)(17)))));
+            this.checkBox_NU.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.checkBox_NU.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
+            this.checkBox_NU.ForeColor = System.Drawing.Color.Gainsboro;
+            this.checkBox_NU.Location = new System.Drawing.Point(488, 402);
+            this.checkBox_NU.Margin = new System.Windows.Forms.Padding(2);
+            this.checkBox_NU.Name = "checkBox_NU";
+            this.checkBox_NU.Size = new System.Drawing.Size(42, 21);
+            this.checkBox_NU.TabIndex = 24;
+            this.checkBox_NU.Text = "No";
+            this.checkBox_NU.UseVisualStyleBackColor = false;
+            this.checkBox_NU.Click += new System.EventHandler(this.checkBox_NU_Click);
+            // 
+            // checkBox_DA
+            // 
+            this.checkBox_DA.AutoSize = true;
+            this.checkBox_DA.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(11)))), ((int)(((byte)(7)))), ((int)(((byte)(17)))));
+            this.checkBox_DA.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.checkBox_DA.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
+            this.checkBox_DA.ForeColor = System.Drawing.Color.Gainsboro;
+            this.checkBox_DA.Location = new System.Drawing.Point(418, 402);
+            this.checkBox_DA.Margin = new System.Windows.Forms.Padding(2);
+            this.checkBox_DA.Name = "checkBox_DA";
+            this.checkBox_DA.Size = new System.Drawing.Size(48, 21);
+            this.checkBox_DA.TabIndex = 23;
+            this.checkBox_DA.Text = "Yes";
+            this.checkBox_DA.UseVisualStyleBackColor = false;
+            this.checkBox_DA.Click += new System.EventHandler(this.checkBox_DA_Click);
             // 
             // lbl_PB_Category
             // 
@@ -385,38 +417,6 @@
             this.pb_StudentHelperLogo.TabIndex = 0;
             this.pb_StudentHelperLogo.TabStop = false;
             // 
-            // checkBox_NU
-            // 
-            this.checkBox_NU.AutoSize = true;
-            this.checkBox_NU.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(11)))), ((int)(((byte)(7)))), ((int)(((byte)(17)))));
-            this.checkBox_NU.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.checkBox_NU.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
-            this.checkBox_NU.ForeColor = System.Drawing.Color.Gainsboro;
-            this.checkBox_NU.Location = new System.Drawing.Point(488, 402);
-            this.checkBox_NU.Margin = new System.Windows.Forms.Padding(2);
-            this.checkBox_NU.Name = "checkBox_NU";
-            this.checkBox_NU.Size = new System.Drawing.Size(42, 21);
-            this.checkBox_NU.TabIndex = 24;
-            this.checkBox_NU.Text = "No";
-            this.checkBox_NU.UseVisualStyleBackColor = false;
-            this.checkBox_NU.Click += new System.EventHandler(this.checkBox_NU_Click);
-            // 
-            // checkBox_DA
-            // 
-            this.checkBox_DA.AutoSize = true;
-            this.checkBox_DA.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(11)))), ((int)(((byte)(7)))), ((int)(((byte)(17)))));
-            this.checkBox_DA.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.checkBox_DA.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
-            this.checkBox_DA.ForeColor = System.Drawing.Color.Gainsboro;
-            this.checkBox_DA.Location = new System.Drawing.Point(418, 402);
-            this.checkBox_DA.Margin = new System.Windows.Forms.Padding(2);
-            this.checkBox_DA.Name = "checkBox_DA";
-            this.checkBox_DA.Size = new System.Drawing.Size(48, 21);
-            this.checkBox_DA.TabIndex = 23;
-            this.checkBox_DA.Text = "Yes";
-            this.checkBox_DA.UseVisualStyleBackColor = false;
-            this.checkBox_DA.Click += new System.EventHandler(this.checkBox_DA_Click);
-            // 
             // MainApp
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
@@ -428,7 +428,7 @@
             this.Margin = new System.Windows.Forms.Padding(4);
             this.Name = "MainApp";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
-            this.Text = "Form1";
+            this.Text = "Student Helper";
             this.panelSideMenu.ResumeLayout(false);
             this.panelSideMenu.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.trackBar_Choice)).EndInit();

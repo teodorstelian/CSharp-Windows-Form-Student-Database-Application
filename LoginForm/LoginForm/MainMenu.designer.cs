@@ -129,7 +129,7 @@
             this.Margin = new System.Windows.Forms.Padding(4);
             this.Name = "FormMainMenu";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
-            this.Text = "Form1";
+            this.Text = "Student Helper";
             this.panelSideMenu.ResumeLayout(false);
             this.panelSideMenu.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();

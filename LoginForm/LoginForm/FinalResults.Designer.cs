@@ -181,7 +181,9 @@
             this.Controls.Add(this.lbl_Title_FinalResults);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "FinalResults";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "FinalResults";
+            this.MouseDown += new System.Windows.Forms.MouseEventHandler(this.FinalResults_MouseDown);
             this.ResumeLayout(false);
             this.PerformLayout();
 

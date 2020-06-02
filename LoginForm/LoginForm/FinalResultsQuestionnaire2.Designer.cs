@@ -85,7 +85,9 @@
             this.Controls.Add(this.lbl_Results_FinalResults2);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "FinalResultsQuestionnaire2";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "FinalResultsQuestionnaire2";
+            this.MouseDown += new System.Windows.Forms.MouseEventHandler(this.FinalResultsQuestionnaire2_MouseDown);
             this.ResumeLayout(false);
             this.PerformLayout();
 
