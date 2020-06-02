@@ -39,16 +39,16 @@
             this.lbl_CatC_Points_FinalResult = new System.Windows.Forms.Label();
             this.btn_Exit_FinalResult = new System.Windows.Forms.Button();
             this.btn_Submit_FinalResult = new System.Windows.Forms.Button();
-            this.btn_Questionnaire2_FinalResult = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // lbl_Title_FinalResults
             // 
             this.lbl_Title_FinalResults.AutoSize = true;
+            this.lbl_Title_FinalResults.Font = new System.Drawing.Font("Microsoft Sans Serif", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lbl_Title_FinalResults.ForeColor = System.Drawing.Color.Gainsboro;
             this.lbl_Title_FinalResults.Location = new System.Drawing.Point(48, 30);
             this.lbl_Title_FinalResults.Name = "lbl_Title_FinalResults";
-            this.lbl_Title_FinalResults.Size = new System.Drawing.Size(106, 13);
+            this.lbl_Title_FinalResults.Size = new System.Drawing.Size(186, 24);
             this.lbl_Title_FinalResults.TabIndex = 0;
             this.lbl_Title_FinalResults.Text = "lbl_Title_FinalResults";
             // 
@@ -134,32 +134,27 @@
             // 
             // btn_Exit_FinalResult
             // 
+            this.btn_Exit_FinalResult.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btn_Exit_FinalResult.ForeColor = System.Drawing.Color.Gainsboro;
             this.btn_Exit_FinalResult.Location = new System.Drawing.Point(51, 367);
             this.btn_Exit_FinalResult.Name = "btn_Exit_FinalResult";
             this.btn_Exit_FinalResult.Size = new System.Drawing.Size(75, 23);
             this.btn_Exit_FinalResult.TabIndex = 9;
-            this.btn_Exit_FinalResult.Text = "btn_Exit_FinalResult";
+            this.btn_Exit_FinalResult.Text = "Exit";
             this.btn_Exit_FinalResult.UseVisualStyleBackColor = true;
             this.btn_Exit_FinalResult.Click += new System.EventHandler(this.btn_Exit_FinalResult_Click);
             // 
             // btn_Submit_FinalResult
             // 
+            this.btn_Submit_FinalResult.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btn_Submit_FinalResult.ForeColor = System.Drawing.Color.Gainsboro;
             this.btn_Submit_FinalResult.Location = new System.Drawing.Point(217, 367);
             this.btn_Submit_FinalResult.Name = "btn_Submit_FinalResult";
             this.btn_Submit_FinalResult.Size = new System.Drawing.Size(75, 23);
             this.btn_Submit_FinalResult.TabIndex = 10;
-            this.btn_Submit_FinalResult.Text = "btn_Submit_FinalResult";
+            this.btn_Submit_FinalResult.Text = "Submit";
             this.btn_Submit_FinalResult.UseVisualStyleBackColor = true;
             this.btn_Submit_FinalResult.Click += new System.EventHandler(this.btn_Submit_FinalResult_Click);
-            // 
-            // btn_Questionnaire2_FinalResult
-            // 
-            this.btn_Questionnaire2_FinalResult.Location = new System.Drawing.Point(391, 367);
-            this.btn_Questionnaire2_FinalResult.Name = "btn_Questionnaire2_FinalResult";
-            this.btn_Questionnaire2_FinalResult.Size = new System.Drawing.Size(75, 23);
-            this.btn_Questionnaire2_FinalResult.TabIndex = 11;
-            this.btn_Questionnaire2_FinalResult.Text = "btn_Questionnaire2_FinalResult";
-            this.btn_Questionnaire2_FinalResult.UseVisualStyleBackColor = true;
             // 
             // FinalResults
             // 
@@ -167,7 +162,6 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(11)))), ((int)(((byte)(7)))), ((int)(((byte)(17)))));
             this.ClientSize = new System.Drawing.Size(800, 450);
-            this.Controls.Add(this.btn_Questionnaire2_FinalResult);
             this.Controls.Add(this.btn_Submit_FinalResult);
             this.Controls.Add(this.btn_Exit_FinalResult);
             this.Controls.Add(this.lbl_CatC_Points_FinalResult);
@@ -202,6 +196,5 @@
         private System.Windows.Forms.Label lbl_CatC_Points_FinalResult;
         private System.Windows.Forms.Button btn_Exit_FinalResult;
         private System.Windows.Forms.Button btn_Submit_FinalResult;
-        private System.Windows.Forms.Button btn_Questionnaire2_FinalResult;
     }
 }

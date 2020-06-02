@@ -137,9 +137,9 @@
             this.lbl_PB_Category.ForeColor = System.Drawing.Color.Gainsboro;
             this.lbl_PB_Category.Location = new System.Drawing.Point(852, 402);
             this.lbl_PB_Category.Name = "lbl_PB_Category";
-            this.lbl_PB_Category.Size = new System.Drawing.Size(113, 17);
+            this.lbl_PB_Category.Size = new System.Drawing.Size(126, 17);
             this.lbl_PB_Category.TabIndex = 22;
-            this.lbl_PB_Category.Text = "lbl_PB_Category";
+            this.lbl_PB_Category.Text = "Category Progress";
             // 
             // lbl_PB_Total
             // 
@@ -147,9 +147,9 @@
             this.lbl_PB_Total.ForeColor = System.Drawing.Color.Gainsboro;
             this.lbl_PB_Total.Location = new System.Drawing.Point(852, 340);
             this.lbl_PB_Total.Name = "lbl_PB_Total";
-            this.lbl_PB_Total.Size = new System.Drawing.Size(88, 17);
+            this.lbl_PB_Total.Size = new System.Drawing.Size(101, 17);
             this.lbl_PB_Total.TabIndex = 21;
-            this.lbl_PB_Total.Text = "lbl_PB_Total";
+            this.lbl_PB_Total.Text = "Total Progress";
             // 
             // progressBar_Total
             // 
@@ -176,41 +176,49 @@
             // 
             // btn_Result
             // 
+            this.btn_Result.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btn_Result.ForeColor = System.Drawing.Color.Gainsboro;
             this.btn_Result.Location = new System.Drawing.Point(382, 453);
             this.btn_Result.Name = "btn_Result";
             this.btn_Result.Size = new System.Drawing.Size(84, 32);
             this.btn_Result.TabIndex = 16;
-            this.btn_Result.Text = "btn_Result";
+            this.btn_Result.Text = "Result";
             this.btn_Result.UseVisualStyleBackColor = true;
             this.btn_Result.Click += new System.EventHandler(this.btn_Result_Click);
             // 
             // btn_Next
             // 
+            this.btn_Next.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btn_Next.ForeColor = System.Drawing.Color.Gainsboro;
             this.btn_Next.Location = new System.Drawing.Point(259, 453);
             this.btn_Next.Name = "btn_Next";
             this.btn_Next.Size = new System.Drawing.Size(83, 32);
             this.btn_Next.TabIndex = 15;
-            this.btn_Next.Text = "btn_Next";
+            this.btn_Next.Text = "Next";
             this.btn_Next.UseVisualStyleBackColor = true;
             this.btn_Next.Click += new System.EventHandler(this.btn_Next_Click);
             // 
             // btn_Abort
             // 
+            this.btn_Abort.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btn_Abort.ForeColor = System.Drawing.Color.Gainsboro;
             this.btn_Abort.Location = new System.Drawing.Point(137, 453);
             this.btn_Abort.Name = "btn_Abort";
             this.btn_Abort.Size = new System.Drawing.Size(92, 32);
             this.btn_Abort.TabIndex = 14;
-            this.btn_Abort.Text = "btn_Abort";
+            this.btn_Abort.Text = "Abort";
             this.btn_Abort.UseVisualStyleBackColor = true;
             this.btn_Abort.Click += new System.EventHandler(this.btn_Abort_Click);
             // 
             // btn_StartQ2
             // 
+            this.btn_StartQ2.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btn_StartQ2.ForeColor = System.Drawing.Color.Gainsboro;
             this.btn_StartQ2.Location = new System.Drawing.Point(722, 296);
             this.btn_StartQ2.Name = "btn_StartQ2";
-            this.btn_StartQ2.Size = new System.Drawing.Size(107, 28);
+            this.btn_StartQ2.Size = new System.Drawing.Size(161, 28);
             this.btn_StartQ2.TabIndex = 13;
-            this.btn_StartQ2.Text = "btn_StartQ2";
+            this.btn_StartQ2.Text = "Second Questionnaire";
             this.btn_StartQ2.UseVisualStyleBackColor = true;
             this.btn_StartQ2.Click += new System.EventHandler(this.btn_StartQ2_Click);
             // 
@@ -257,40 +265,45 @@
             // lbl_Motivation
             // 
             this.lbl_Motivation.AutoSize = true;
+            this.lbl_Motivation.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lbl_Motivation.ForeColor = System.Drawing.Color.Gainsboro;
-            this.lbl_Motivation.Location = new System.Drawing.Point(487, 256);
+            this.lbl_Motivation.Location = new System.Drawing.Point(445, 221);
             this.lbl_Motivation.Name = "lbl_Motivation";
-            this.lbl_Motivation.Size = new System.Drawing.Size(94, 17);
+            this.lbl_Motivation.Size = new System.Drawing.Size(105, 20);
             this.lbl_Motivation.TabIndex = 8;
             this.lbl_Motivation.Text = "lbl_Motivation";
             // 
             // lbl_Subtitle
             // 
             this.lbl_Subtitle.AutoSize = true;
+            this.lbl_Subtitle.Font = new System.Drawing.Font("Microsoft Sans Serif", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lbl_Subtitle.ForeColor = System.Drawing.Color.Gainsboro;
-            this.lbl_Subtitle.Location = new System.Drawing.Point(504, 223);
+            this.lbl_Subtitle.Location = new System.Drawing.Point(402, 168);
             this.lbl_Subtitle.Name = "lbl_Subtitle";
-            this.lbl_Subtitle.Size = new System.Drawing.Size(77, 17);
+            this.lbl_Subtitle.Size = new System.Drawing.Size(100, 24);
             this.lbl_Subtitle.TabIndex = 7;
             this.lbl_Subtitle.Text = "lbl_Subtitle";
             // 
             // btn_StartQ1
             // 
+            this.btn_StartQ1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btn_StartQ1.ForeColor = System.Drawing.Color.Gainsboro;
             this.btn_StartQ1.Location = new System.Drawing.Point(154, 296);
             this.btn_StartQ1.Name = "btn_StartQ1";
-            this.btn_StartQ1.Size = new System.Drawing.Size(112, 28);
+            this.btn_StartQ1.Size = new System.Drawing.Size(140, 28);
             this.btn_StartQ1.TabIndex = 6;
-            this.btn_StartQ1.Text = "btn_StartQ1";
+            this.btn_StartQ1.Text = "First Questionnaire";
             this.btn_StartQ1.UseVisualStyleBackColor = true;
             this.btn_StartQ1.Click += new System.EventHandler(this.btn_StartQ1_Click);
             // 
             // lbl_Title
             // 
             this.lbl_Title.AutoSize = true;
+            this.lbl_Title.Font = new System.Drawing.Font("Microsoft Sans Serif", 16F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lbl_Title.ForeColor = System.Drawing.Color.Gainsboro;
-            this.lbl_Title.Location = new System.Drawing.Point(514, 195);
+            this.lbl_Title.Location = new System.Drawing.Point(444, 127);
             this.lbl_Title.Name = "lbl_Title";
-            this.lbl_Title.Size = new System.Drawing.Size(57, 17);
+            this.lbl_Title.Size = new System.Drawing.Size(86, 26);
             this.lbl_Title.TabIndex = 5;
             this.lbl_Title.Text = "lbl_Title";
             // 

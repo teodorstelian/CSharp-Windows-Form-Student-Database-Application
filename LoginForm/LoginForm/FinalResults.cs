@@ -90,13 +90,13 @@ namespace LoginForm
         {
             // clau
 
-            myCon.ConnectionString = @"Data Source = (LocalDB)\MSSQLLocalDB; AttachDbFilename = 'C:\Users\filda\Desktop\IntrebariChestionar1\IntrebariChestionar1\Database1.mdf'; Integrated Security = True";
+            myCon.ConnectionString = @"Data Source = (LocalDB)\MSSQLLocalDB; AttachDbFilename = 'D:\Documents\GitHub\CSharp-Windows-Form-Student-Database-Application\LoginForm\LoginForm\Database1.mdf'; Integrated Security = True";
 
             string sqlstring2 = "INSERT INTO TableRez1 (UserName, punctajG, punctajV, punctajN, punctajC, nivelG, nivelV, nivelN, nivelC) VALUES ( @un, @pg, @pv ,@pn, @pc, @ng, @nv, @nn, @nc)";
 
             SqlCommand command2 = new SqlCommand(sqlstring2, myCon);
             
-            command2.Parameters.AddWithValue("@un", "userj3");// AICI TREBUIE PUS NUMELE UTILIZATORULU
+            command2.Parameters.AddWithValue("@un", "userj4");// AICI TREBUIE PUS NUMELE UTILIZATORULU
             // SCHIMBA-L LA FIECARE RULARE
             //command2.Parameters.AddWithValue("@un", UserNamelocal);
 

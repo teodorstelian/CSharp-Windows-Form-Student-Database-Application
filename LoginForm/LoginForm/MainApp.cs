@@ -76,7 +76,10 @@ namespace LoginForm
 
         private void TestResultsButton_Click(object sender, EventArgs e)
         {
-            hideSubMenu();
+            FinalResults thirdForm = new FinalResults(punctajG.ToString(), punctajV.ToString(), punctajN.ToString(), punctajC.ToString(), categorieGNivel.ToString(), categorieVNivel.ToString(), categorieNNivel.ToString(), categorieCNivel.ToString(), UserName);
+            this.Hide();
+            thirdForm.ShowDialog();
+            this.Close();
         }
 
         private void panelSideMenu_MouseDown(object sender, MouseEventArgs e)
@@ -191,7 +194,7 @@ namespace LoginForm
 
             trackBar_Choice.Visible = true;
 
-            myCon.ConnectionString = @"Data Source = (LocalDB)\MSSQLLocalDB; AttachDbFilename = 'C:\Users\dania\OneDrive\Scoală\An3Sem2\Industrial Informatics (II)\Project\IntrebariChestionar1\Database1.mdf'; Integrated Security = True";
+            myCon.ConnectionString = @"Data Source = (LocalDB)\MSSQLLocalDB; AttachDbFilename = 'D:\Documents\GitHub\CSharp-Windows-Form-Student-Database-Application\LoginForm\LoginForm\Database1.mdf'; Integrated Security = True";
             // myCon.ConnectionString = @"Data Source = (LocalDB)\MSSQC:\Users\filda\Desktop\IntrebariChestionar1\IntrebariChestionar1\Renunta.csLLocalDB; AttachDbFilename = 'E:\an 3 sem 2\Industrial Informatics - II\proiect\actual\II PROIECT\II PROIECT\VERSIUNE 1\IntrebariChestionar1\Database1.mdf'; Integrated Security = True";
 
             myCon.Open();

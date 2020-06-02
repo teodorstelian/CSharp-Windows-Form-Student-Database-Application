@@ -67,7 +67,7 @@ namespace LoginForm
         private void btn_Submit_FinalResults2_Click(object sender, EventArgs e)
         {
             //Claudiu
-            myCon.ConnectionString = @"Data Source = (LocalDB)\MSSQLLocalDB; AttachDbFilename = 'C:\Users\dania\Desktop\Chestionar2\Database1.mdf'; Integrated Security = True";
+            myCon.ConnectionString = @"Data Source = (LocalDB)\MSSQLLocalDB; AttachDbFilename = 'D:\Documents\GitHub\CSharp-Windows-Form-Student-Database-Application\LoginForm\LoginForm\Database1.mdf'; Integrated Security = True";
             //myCon.ConnectionString = @"Data Source = (LocalDB)\MSSQLLocalDB; AttachDbFilename = 'C:\Users\filda\Desktop\Chestionar2\Chestionar2\Database1.mdf'; Integrated Security = True";
 
             string sqlstring2 = "UPDATE TableRez1 SET Lingvistica=@lin, LogicaMate=@lm, Muzicala=@mz, Motrica=@mo, Spatiala=@sp, Interpersonala=@interp, Intrapersonala=@intrap, Naturalista=@na WHERE UserName=@un";

@@ -221,3 +221,7 @@ C:\Users\Vasile\Documents\GitHub\II-2019-20\LoginForm\LoginForm\obj\Debug\Regist
 C:\Users\Vasile\Documents\GitHub\II-2019-20\LoginForm\LoginForm\obj\Debug\RegisterForm.csproj.CopyComplete
 C:\Users\Vasile\Documents\GitHub\II-2019-20\LoginForm\LoginForm\obj\Debug\LoginForm.exe
 C:\Users\Vasile\Documents\GitHub\II-2019-20\LoginForm\LoginForm\obj\Debug\LoginForm.pdb
+D:\Documents\GitHub\CSharp-Windows-Form-Student-Database-Application\LoginForm\LoginForm\bin\Debug\Chestionar2.mdf
+D:\Documents\GitHub\CSharp-Windows-Form-Student-Database-Application\LoginForm\LoginForm\bin\Debug\Chestionar2_log.ldf
+D:\Documents\GitHub\CSharp-Windows-Form-Student-Database-Application\LoginForm\LoginForm\bin\Debug\Database1.mdf
+D:\Documents\GitHub\CSharp-Windows-Form-Student-Database-Application\LoginForm\LoginForm\bin\Debug\Database1_log.ldf
