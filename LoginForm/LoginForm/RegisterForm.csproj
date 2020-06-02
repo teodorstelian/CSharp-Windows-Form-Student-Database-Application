@@ -140,6 +140,9 @@
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="User.cs" />
     <Compile Include="UserRepository.cs" />
+    <EmbeddedResource Include="AbortForm.resx">
+      <DependentUpon>AbortForm.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="ListOfUniversities.resx">
       <DependentUpon>ListOfUniversities.cs</DependentUpon>
     </EmbeddedResource>

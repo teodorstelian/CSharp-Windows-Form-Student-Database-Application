@@ -28,12 +28,10 @@ namespace LoginForm
             // Claudiu
 
             UserName = "User1";//  AICI TREBUIE SA PRIMESC PARAMETRU DE LA PROIECTUL PRINCTIPAL !!!!!!!!!!!!!
-            InitializeComponent();
 
             trackBar_Choice.Minimum = 1;
             trackBar_Choice.Maximum = 6;
 
-            
             lbl_Title.Text = "Questionnaire";
             lbl_Subtitle.Text = "Primul pas catre facultate";
             lbl_Motivation.Text = "Esti pregatit(a)?";
@@ -50,7 +48,7 @@ namespace LoginForm
             trackBar_Choice.Visible = false;
             btn_Next.Visible = false;
             btn_Result.Visible = false;
-            btn_Abort.Visible = true;
+            btn_Abort.Visible = false;
             btn_StartQ1.Visible = true;
             btn_StartQ2.Visible = true;
             // end Claudiu
@@ -66,7 +64,6 @@ namespace LoginForm
        private void customizeDesign()
         {
             panelLoginSubMenu.Visible = false;
-            
         }
 
         private void hideSubMenu()
@@ -399,13 +396,13 @@ namespace LoginForm
 
         private void btn_StartQ1_Click(object sender, EventArgs e)
         {
+            btn_StartQ1.Hide();
+            btn_StartQ2.Hide();
+            lbl_Motivation.Hide();
+
             GetQuestion();
             lbl_Indicator.Text = "Constantly";
             lbl_Instruction.Text = "Alege nivelul care te caracterizeaza";
-
-            lbl_Motivation.Hide();
-
-            btn_StartQ1.Hide();
 
             btn_Next.Visible = true;
             btn_Abort.Visible = true;

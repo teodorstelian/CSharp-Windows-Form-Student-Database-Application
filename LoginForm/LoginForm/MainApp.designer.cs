@@ -89,7 +89,7 @@
             // 
             // trackBar_Choice
             // 
-            this.trackBar_Choice.Location = new System.Drawing.Point(527, 372);
+            this.trackBar_Choice.Location = new System.Drawing.Point(526, 400);
             this.trackBar_Choice.Margin = new System.Windows.Forms.Padding(2);
             this.trackBar_Choice.Name = "trackBar_Choice";
             this.trackBar_Choice.Size = new System.Drawing.Size(78, 45);
@@ -98,9 +98,9 @@
             // 
             // btn_Result
             // 
-            this.btn_Result.Location = new System.Drawing.Point(484, 452);
+            this.btn_Result.Location = new System.Drawing.Point(382, 453);
             this.btn_Result.Name = "btn_Result";
-            this.btn_Result.Size = new System.Drawing.Size(75, 23);
+            this.btn_Result.Size = new System.Drawing.Size(84, 32);
             this.btn_Result.TabIndex = 16;
             this.btn_Result.Text = "btn_Result";
             this.btn_Result.UseVisualStyleBackColor = true;
@@ -108,9 +108,9 @@
             // 
             // btn_Next
             // 
-            this.btn_Next.Location = new System.Drawing.Point(314, 453);
+            this.btn_Next.Location = new System.Drawing.Point(259, 453);
             this.btn_Next.Name = "btn_Next";
-            this.btn_Next.Size = new System.Drawing.Size(75, 23);
+            this.btn_Next.Size = new System.Drawing.Size(83, 32);
             this.btn_Next.TabIndex = 15;
             this.btn_Next.Text = "btn_Next";
             this.btn_Next.UseVisualStyleBackColor = true;
@@ -120,7 +120,7 @@
             // 
             this.btn_Abort.Location = new System.Drawing.Point(137, 453);
             this.btn_Abort.Name = "btn_Abort";
-            this.btn_Abort.Size = new System.Drawing.Size(75, 23);
+            this.btn_Abort.Size = new System.Drawing.Size(92, 32);
             this.btn_Abort.TabIndex = 14;
             this.btn_Abort.Text = "btn_Abort";
             this.btn_Abort.UseVisualStyleBackColor = true;
@@ -128,7 +128,7 @@
             // 
             // btn_StartQ2
             // 
-            this.btn_StartQ2.Location = new System.Drawing.Point(464, 296);
+            this.btn_StartQ2.Location = new System.Drawing.Point(722, 296);
             this.btn_StartQ2.Name = "btn_StartQ2";
             this.btn_StartQ2.Size = new System.Drawing.Size(107, 28);
             this.btn_StartQ2.TabIndex = 13;
@@ -139,7 +139,7 @@
             // 
             this.lbl_Indicator.AutoSize = true;
             this.lbl_Indicator.ForeColor = System.Drawing.Color.Gainsboro;
-            this.lbl_Indicator.Location = new System.Drawing.Point(702, 400);
+            this.lbl_Indicator.Location = new System.Drawing.Point(609, 400);
             this.lbl_Indicator.Name = "lbl_Indicator";
             this.lbl_Indicator.Size = new System.Drawing.Size(84, 17);
             this.lbl_Indicator.TabIndex = 12;
@@ -169,7 +169,7 @@
             // 
             this.lbl_QuestionNumber.AutoSize = true;
             this.lbl_QuestionNumber.ForeColor = System.Drawing.Color.Gainsboro;
-            this.lbl_QuestionNumber.Location = new System.Drawing.Point(510, 269);
+            this.lbl_QuestionNumber.Location = new System.Drawing.Point(92, 343);
             this.lbl_QuestionNumber.Name = "lbl_QuestionNumber";
             this.lbl_QuestionNumber.Size = new System.Drawing.Size(137, 17);
             this.lbl_QuestionNumber.TabIndex = 9;
@@ -179,7 +179,7 @@
             // 
             this.lbl_Motivation.AutoSize = true;
             this.lbl_Motivation.ForeColor = System.Drawing.Color.Gainsboro;
-            this.lbl_Motivation.Location = new System.Drawing.Point(370, 274);
+            this.lbl_Motivation.Location = new System.Drawing.Point(487, 256);
             this.lbl_Motivation.Name = "lbl_Motivation";
             this.lbl_Motivation.Size = new System.Drawing.Size(94, 17);
             this.lbl_Motivation.TabIndex = 8;
@@ -189,7 +189,7 @@
             // 
             this.lbl_Subtitle.AutoSize = true;
             this.lbl_Subtitle.ForeColor = System.Drawing.Color.Gainsboro;
-            this.lbl_Subtitle.Location = new System.Drawing.Point(370, 234);
+            this.lbl_Subtitle.Location = new System.Drawing.Point(504, 223);
             this.lbl_Subtitle.Name = "lbl_Subtitle";
             this.lbl_Subtitle.Size = new System.Drawing.Size(77, 17);
             this.lbl_Subtitle.TabIndex = 7;
@@ -199,7 +199,7 @@
             // 
             this.btn_StartQ1.Location = new System.Drawing.Point(154, 296);
             this.btn_StartQ1.Name = "btn_StartQ1";
-            this.btn_StartQ1.Size = new System.Drawing.Size(107, 28);
+            this.btn_StartQ1.Size = new System.Drawing.Size(112, 28);
             this.btn_StartQ1.TabIndex = 6;
             this.btn_StartQ1.Text = "btn_StartQ1";
             this.btn_StartQ1.UseVisualStyleBackColor = true;
