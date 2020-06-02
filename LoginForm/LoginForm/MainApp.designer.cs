@@ -53,6 +53,10 @@
             this.SignOutButton = new System.Windows.Forms.Button();
             this.panelLogo = new System.Windows.Forms.Panel();
             this.pb_StudentHelperLogo = new System.Windows.Forms.PictureBox();
+            this.progressBar_Category = new System.Windows.Forms.ProgressBar();
+            this.progressBar_Total = new System.Windows.Forms.ProgressBar();
+            this.lbl_PB_Total = new System.Windows.Forms.Label();
+            this.lbl_PB_Category = new System.Windows.Forms.Label();
             this.panelSideMenu.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.trackBar_Choice)).BeginInit();
             this.panel1.SuspendLayout();
@@ -64,6 +68,10 @@
             // panelSideMenu
             // 
             this.panelSideMenu.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(11)))), ((int)(((byte)(7)))), ((int)(((byte)(17)))));
+            this.panelSideMenu.Controls.Add(this.lbl_PB_Category);
+            this.panelSideMenu.Controls.Add(this.lbl_PB_Total);
+            this.panelSideMenu.Controls.Add(this.progressBar_Total);
+            this.panelSideMenu.Controls.Add(this.progressBar_Category);
             this.panelSideMenu.Controls.Add(this.trackBar_Choice);
             this.panelSideMenu.Controls.Add(this.btn_Result);
             this.panelSideMenu.Controls.Add(this.btn_Next);
@@ -338,6 +346,40 @@
             this.pb_StudentHelperLogo.TabIndex = 0;
             this.pb_StudentHelperLogo.TabStop = false;
             // 
+            // progressBar_Category
+            // 
+            this.progressBar_Category.Location = new System.Drawing.Point(855, 422);
+            this.progressBar_Category.Name = "progressBar_Category";
+            this.progressBar_Category.Size = new System.Drawing.Size(170, 23);
+            this.progressBar_Category.TabIndex = 19;
+            // 
+            // progressBar_Total
+            // 
+            this.progressBar_Total.Location = new System.Drawing.Point(855, 360);
+            this.progressBar_Total.Name = "progressBar_Total";
+            this.progressBar_Total.Size = new System.Drawing.Size(170, 23);
+            this.progressBar_Total.TabIndex = 20;
+            // 
+            // lbl_PB_Total
+            // 
+            this.lbl_PB_Total.AutoSize = true;
+            this.lbl_PB_Total.ForeColor = System.Drawing.Color.Gainsboro;
+            this.lbl_PB_Total.Location = new System.Drawing.Point(852, 340);
+            this.lbl_PB_Total.Name = "lbl_PB_Total";
+            this.lbl_PB_Total.Size = new System.Drawing.Size(88, 17);
+            this.lbl_PB_Total.TabIndex = 21;
+            this.lbl_PB_Total.Text = "lbl_PB_Total";
+            // 
+            // lbl_PB_Category
+            // 
+            this.lbl_PB_Category.AutoSize = true;
+            this.lbl_PB_Category.ForeColor = System.Drawing.Color.Gainsboro;
+            this.lbl_PB_Category.Location = new System.Drawing.Point(852, 402);
+            this.lbl_PB_Category.Name = "lbl_PB_Category";
+            this.lbl_PB_Category.Size = new System.Drawing.Size(113, 17);
+            this.lbl_PB_Category.TabIndex = 22;
+            this.lbl_PB_Category.Text = "lbl_PB_Category";
+            // 
             // MainApp
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
@@ -387,6 +429,10 @@
         private System.Windows.Forms.Label lbl_Subtitle;
         private System.Windows.Forms.Button btn_StartQ1;
         private System.Windows.Forms.Label lbl_Title;
+        private System.Windows.Forms.ProgressBar progressBar_Category;
+        private System.Windows.Forms.Label lbl_PB_Category;
+        private System.Windows.Forms.Label lbl_PB_Total;
+        private System.Windows.Forms.ProgressBar progressBar_Total;
     }
 }
 

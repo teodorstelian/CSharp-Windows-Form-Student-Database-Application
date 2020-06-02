@@ -24,34 +24,7 @@ namespace LoginForm
             InitializeComponent();
             customizeDesign();
             WelcomeUser();
-
-            // Claudiu
-
-            UserName = "User1";//  AICI TREBUIE SA PRIMESC PARAMETRU DE LA PROIECTUL PRINCTIPAL !!!!!!!!!!!!!
-
-            trackBar_Choice.Minimum = 1;
-            trackBar_Choice.Maximum = 6;
-
-            lbl_Title.Text = "Questionnaire";
-            lbl_Subtitle.Text = "Primul pas catre facultate";
-            lbl_Motivation.Text = "Esti pregatit(a)?";
-            lbl_QuestionNumber.Text = "";
-            lbl_Question.Text = "";
-            lbl_Instruction.Text = "";
-            lbl_Indicator.Text = "";
-
-            counterintrebare = 0;
-            //lbl_QuestionNumber.Text = "Intrebarea numarul: " + counterintrebare.ToString();
-
-            counterintrebareMax = 44;
-
-            trackBar_Choice.Visible = false;
-            btn_Next.Visible = false;
-            btn_Result.Visible = false;
-            btn_Abort.Visible = false;
-            btn_StartQ1.Visible = true;
-            btn_StartQ2.Visible = true;
-            // end Claudiu
+            Reset();
         }
         /// <summary>
         /// IN PROGRESS - Display the user inthe label
@@ -125,7 +98,7 @@ namespace LoginForm
 
         // Claudiu & Ionela
 
-        int counterintrebare;
+        int counterintrebare = 0;
         int counterintrebareMax;
         SqlConnection myCon = new SqlConnection();
         DataSet dsIntrebari;
@@ -142,9 +115,50 @@ namespace LoginForm
 
         string UserName;
 
+        string categoryID = "G";
+        int counterG = 0;
+        int counterV = 0;
+        int counterN = 0;
+        int counterC = 0;
+
         private void btn_Next_Click(object sender, EventArgs e)
         {
             GetQuestion();
+
+            if (categoryID == "G" && progressBar_Category.Value != counterG)
+            {
+                progressBar_Category.Value = counterintrebare;
+            }
+            else if (categoryID == "G" && progressBar_Category.Value == counterG)
+            {
+                categoryID = "V";
+                progressBar_Category.Value = 0;
+                progressBar_Category.Maximum = counterV;
+            }
+            if(categoryID == "V" && progressBar_Category.Value != counterV)
+            {
+                progressBar_Category.Value = counterintrebare - counterG;
+            }
+            else if (categoryID == "V" && progressBar_Category.Value == counterV)
+            {
+                categoryID = "N";
+                progressBar_Category.Value = 0;
+                progressBar_Category.Maximum = counterN;
+            }
+            if (categoryID == "N" && progressBar_Category.Value != counterN)
+            {
+                progressBar_Category.Value = counterintrebare - counterG - counterV;
+            }
+            else if (categoryID == "N" && progressBar_Category.Value == counterN)
+            {
+                categoryID = "C";
+                progressBar_Category.Value = 0;
+                progressBar_Category.Maximum = counterC;
+            }
+            if (categoryID == "C" && progressBar_Category.Value != counterC)
+            {
+                progressBar_Category.Value = counterintrebare - counterG - counterV - counterN;
+            }
         }
 
         private void GetQuestion()
@@ -160,6 +174,8 @@ namespace LoginForm
 
             dsIntrebari = new DataSet();
             counterintrebare = counterintrebare + 1;
+            progressBar_Total.Value = counterintrebare;
+
             lbl_QuestionNumber.Text = "Intrebarea numarul: " + counterintrebare.ToString();
 
             string sqlstring1 = "SELECT * FROM Intrebari WHERE ID=" + counterintrebare.ToString();
@@ -384,14 +400,69 @@ namespace LoginForm
 
             //  MessageBox.Show("Nivelul meu de coordonare ochi-mana (C) este: " + categorieCNivel.ToString());
 
-            // RezultateFinale thirdForm = new RezultateFinale(punctajG.ToString(), punctajV.ToString(), punctajN.ToString(), punctajC.ToString(), categorieGNivel.ToString(), categorieVNivel.ToString(), categorieNNivel.ToString(), categorieCNivel.ToString(), UserName);
-            // thirdForm.ShowDialog();
+            FinalResults thirdForm = new FinalResults(punctajG.ToString(), punctajV.ToString(), punctajN.ToString(), punctajC.ToString(), categorieGNivel.ToString(), categorieVNivel.ToString(), categorieNNivel.ToString(), categorieCNivel.ToString(), UserName);
+            this.Hide();
+            thirdForm.ShowDialog();
+            this.Close();
+        }
+
+        public void Reset()
+        {
+            // Claudiu
+
+            UserName = "User1";//  AICI TREBUIE SA PRIMESC PARAMETRU DE LA PROIECTUL PRINCTIPAL !!!!!!!!!!!!!
+
+            categoryID = "G";
+            counterG = 0;
+            counterV = 0;
+            counterN = 0;
+            counterC = 0;
+
+            trackBar_Choice.Minimum = 1;
+            trackBar_Choice.Maximum = 6;
+
+            lbl_Title.Text = "Questionnaire";
+            lbl_Subtitle.Text = "The first steps towards universities.";
+            lbl_Motivation.Text = "Are you ready?";
+            lbl_QuestionNumber.Text = "";
+            lbl_Question.Text = "";
+            lbl_Instruction.Text = "";
+            lbl_Indicator.Text = "";
+
+            counterintrebare = 0;
+            //lbl_QuestionNumber.Text = "Intrebarea numarul: " + counterintrebare.ToString();
+
+            counterintrebareMax = 44;
+
+            trackBar_Choice.Visible = false;
+            btn_Next.Visible = false;
+            btn_Result.Visible = false;
+            btn_Abort.Visible = false;
+            btn_StartQ1.Visible = true;
+            btn_StartQ2.Visible = true;
+
+            progressBar_Category.Value = 0;
+            progressBar_Total.Value = 0;
+
+            progressBar_Total.Visible = false;
+            progressBar_Category.Visible = false;
+            lbl_PB_Category.Visible = false;
+            lbl_PB_Total.Visible = false;
+
+            // end Claudiu
         }
 
         private void btn_Abort_Click(object sender, EventArgs e)
         {
-            AbortForm abortForm = new AbortForm();
-            abortForm.ShowDialog();
+            //AbortForm abortForm = new AbortForm();
+            //abortForm.ShowDialog();
+            DialogResult result = MessageBox.Show("Are you sure you want to quit?", "Quit Prompt", MessageBoxButtons.YesNo, MessageBoxIcon.Question);
+            
+            switch (result)
+            {
+                case DialogResult.Yes: Reset(); break;
+                default: break;
+            }
         }
 
         private void btn_StartQ1_Click(object sender, EventArgs e)
@@ -400,12 +471,46 @@ namespace LoginForm
             btn_StartQ2.Hide();
             lbl_Motivation.Hide();
 
+            progressBar_Total.Maximum = counterintrebareMax;
+
             GetQuestion();
             lbl_Indicator.Text = "Constantly";
             lbl_Instruction.Text = "Alege nivelul care te caracterizeaza";
 
             btn_Next.Visible = true;
             btn_Abort.Visible = true;
+            progressBar_Category.Visible = true;
+            progressBar_Total.Visible = true;
+            lbl_PB_Category.Visible = true;
+            lbl_PB_Total.Visible = true;
+
+            myCon.ConnectionString = @"Data Source = (LocalDB)\MSSQLLocalDB; AttachDbFilename = 'C:\Users\dania\OneDrive\Scoală\An3Sem2\Industrial Informatics (II)\Project\IntrebariChestionar1\Database1.mdf'; Integrated Security = True";
+            // myCon.ConnectionString = @"Data Source = (LocalDB)\MSSQC:\Users\filda\Desktop\IntrebariChestionar1\IntrebariChestionar1\Renunta.csLLocalDB; AttachDbFilename = 'E:\an 3 sem 2\Industrial Informatics - II\proiect\actual\II PROIECT\II PROIECT\VERSIUNE 1\IntrebariChestionar1\Database1.mdf'; Integrated Security = True";
+
+            myCon.Open();
+
+            dsIntrebari = new DataSet();
+            lbl_QuestionNumber.Text = "Intrebarea numarul: " + counterintrebare.ToString();
+
+            string sqlstring1 = "SELECT * FROM Intrebari";
+            SqlDataAdapter daIntrebari = new SqlDataAdapter(sqlstring1, myCon);
+            daIntrebari.Fill(dsIntrebari, "TestChestionar");
+
+            foreach (DataRow dr in dsIntrebari.Tables[0].Rows)
+            {
+                switch(dr.ItemArray.GetValue(1).ToString())
+                {
+                    case "G": counterG += 1; break;
+                    case "V": counterV += 1; break;
+                    case "N": counterN += 1; break;
+                    case "C": counterC += 1; break;
+                    default: break;
+                }
+            }
+
+            myCon.Close();
+            progressBar_Category.Maximum = counterG;
+            progressBar_Category.Value = counterintrebare;
         }
     }
 }

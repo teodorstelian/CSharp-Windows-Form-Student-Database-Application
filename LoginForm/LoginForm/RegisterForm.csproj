@@ -105,6 +105,12 @@
       <DependentUpon>AppDataSet.xsd</DependentUpon>
     </Compile>
     <Compile Include="AppHelper.cs" />
+    <Compile Include="FinalResults.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FinalResults.Designer.cs">
+      <DependentUpon>FinalResults.cs</DependentUpon>
+    </Compile>
     <Compile Include="IUserRepository.cs" />
     <Compile Include="ListOfUniversities.cs">
       <SubType>Form</SubType>
@@ -142,6 +148,9 @@
     <Compile Include="UserRepository.cs" />
     <EmbeddedResource Include="AbortForm.resx">
       <DependentUpon>AbortForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FinalResults.resx">
+      <DependentUpon>FinalResults.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="ListOfUniversities.resx">
       <DependentUpon>ListOfUniversities.cs</DependentUpon>
@@ -222,6 +231,7 @@
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
       <DependentUpon>Database.mdf</DependentUpon>
     </Content>
+    <None Include="Resources\Abort_Bg.jpg" />
     <Content Include="Resources\Logo.PNG" />
     <None Include="Resources\Logo1.PNG" />
   </ItemGroup>
