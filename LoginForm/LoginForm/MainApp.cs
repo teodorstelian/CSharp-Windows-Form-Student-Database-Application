@@ -120,44 +120,68 @@ namespace LoginForm
         int counterV = 0;
         int counterN = 0;
         int counterC = 0;
+        bool directionQ;
 
         private void btn_Next_Click(object sender, EventArgs e)
         {
-            GetQuestion();
+            if (directionQ)
+            {
+                GetQuestion();
 
-            if (categoryID == "G" && progressBar_Category.Value != counterG)
-            {
-                progressBar_Category.Value = counterintrebare;
+                if (categoryID == "G" && progressBar_Category.Value != counterG)
+                {
+                    progressBar_Category.Value = counterintrebare;
+                }
+                else if (categoryID == "G" && progressBar_Category.Value == counterG)
+                {
+                    categoryID = "V";
+                    progressBar_Category.Value = 0;
+                    progressBar_Category.Maximum = counterV;
+                }
+                if (categoryID == "V" && progressBar_Category.Value != counterV)
+                {
+                    progressBar_Category.Value = counterintrebare - counterG;
+                }
+                else if (categoryID == "V" && progressBar_Category.Value == counterV)
+                {
+                    categoryID = "N";
+                    progressBar_Category.Value = 0;
+                    progressBar_Category.Maximum = counterN;
+                }
+                if (categoryID == "N" && progressBar_Category.Value != counterN)
+                {
+                    progressBar_Category.Value = counterintrebare - counterG - counterV;
+                }
+                else if (categoryID == "N" && progressBar_Category.Value == counterN)
+                {
+                    categoryID = "C";
+                    progressBar_Category.Value = 0;
+                    progressBar_Category.Maximum = counterC;
+                }
+                if (categoryID == "C" && progressBar_Category.Value != counterC)
+                {
+                    progressBar_Category.Value = counterintrebare - counterG - counterV - counterN;
+                }
             }
-            else if (categoryID == "G" && progressBar_Category.Value == counterG)
+            else
             {
-                categoryID = "V";
-                progressBar_Category.Value = 0;
-                progressBar_Category.Maximum = counterV;
-            }
-            if(categoryID == "V" && progressBar_Category.Value != counterV)
-            {
-                progressBar_Category.Value = counterintrebare - counterG;
-            }
-            else if (categoryID == "V" && progressBar_Category.Value == counterV)
-            {
-                categoryID = "N";
-                progressBar_Category.Value = 0;
-                progressBar_Category.Maximum = counterN;
-            }
-            if (categoryID == "N" && progressBar_Category.Value != counterN)
-            {
-                progressBar_Category.Value = counterintrebare - counterG - counterV;
-            }
-            else if (categoryID == "N" && progressBar_Category.Value == counterN)
-            {
-                categoryID = "C";
-                progressBar_Category.Value = 0;
-                progressBar_Category.Maximum = counterC;
-            }
-            if (categoryID == "C" && progressBar_Category.Value != counterC)
-            {
-                progressBar_Category.Value = counterintrebare - counterG - counterV - counterN;
+                if (checkBox_DA.Checked != true && checkBox_NU.Checked != true)
+                    MessageBox.Show("You haven't checked any answer!");
+
+
+                if (((checkBox_DA.Checked == true) && (checkBox_NU.Checked == false)) || ((checkBox_DA.Checked == false) && (checkBox_NU.Checked == true)))
+                {
+                    CitesteIntrebare();
+
+                    if (checkBox_DA.Checked == true)
+                        checkBox_DA.Checked = !checkBox_DA.Checked;
+
+                    if (checkBox_NU.Checked == true)
+                        checkBox_NU.Checked = !checkBox_NU.Checked;
+                }
+
+                checkBox_DA.Checked = false;
+                checkBox_NU.Checked = false;
             }
         }
 
@@ -440,6 +464,8 @@ namespace LoginForm
             btn_Abort.Visible = false;
             btn_StartQ1.Visible = true;
             btn_StartQ2.Visible = true;
+            checkBox_DA.Visible = false;
+            checkBox_NU.Visible = false;
 
             progressBar_Category.Value = 0;
             progressBar_Total.Value = 0;
@@ -470,6 +496,7 @@ namespace LoginForm
             btn_StartQ1.Hide();
             btn_StartQ2.Hide();
             lbl_Motivation.Hide();
+            directionQ = true;
 
             progressBar_Total.Maximum = counterintrebareMax;
 
@@ -511,6 +538,134 @@ namespace LoginForm
             myCon.Close();
             progressBar_Category.Maximum = counterG;
             progressBar_Category.Value = counterintrebare;
+        }
+
+        // Questionnaire 2
+        SqlConnection myConn = new SqlConnection();
+        DataSet dsIntrebari1;
+
+        int punctajLingvistica = 0;
+        int punctajMatem = 0;
+        int punctajMuzicala = 0;
+        int punctajMotrica = 0;
+        int punctajSpatiala = 0;
+        int punctajInterpersonala = 0;
+        int punctajIntrapersonala = 0;
+        int punctajNaturalista = 0;
+
+        private void btn_StartQ2_Click(object sender, EventArgs e)
+        {
+            btn_StartQ1.Hide();
+            btn_StartQ2.Hide();
+            lbl_Motivation.Hide();
+            CitesteIntrebare();
+            directionQ = false;
+
+            counterintrebare = 0;
+            counterintrebareMax = 79;
+
+            lbl_Instruction.Text = "Is the question right for you?";
+
+            btn_Next.Visible = true;
+            btn_Abort.Visible = true;
+
+            checkBox_DA.Visible = true;
+            checkBox_NU.Visible = true;
+        }
+
+        private void CitesteIntrebare()
+        {
+            myConn.ConnectionString = @"Data Source = (LocalDB)\MSSQLLocalDB; AttachDbFilename = 'C:\Users\dania\Desktop\Chestionar2\Chestionar2.mdf'; Integrated Security = True";
+            //myConn.ConnectionString = @"Data Source = (LocalDB)\MSSQLLocalDB; AttachDbFilename = 'C:\Users\filda\Desktop\Chestionar2\Chestionar2\Chestionar2.mdf'; Integrated Security = True";
+            myConn.Open();
+
+            dsIntrebari1 = new DataSet();
+            counterintrebare = counterintrebare + 1;
+            lbl_QuestionNumber.Text = "Question no.: " + counterintrebare.ToString();
+
+            string sqlstring = "SELECT * FROM Intrebari WHERE ID=" + counterintrebare.ToString();
+            SqlDataAdapter daIntrebari = new SqlDataAdapter(sqlstring, myConn);
+            daIntrebari.Fill(dsIntrebari1, "TestChestionar2");
+            String name = "";
+
+            if (counterintrebare <= counterintrebareMax)
+            {
+
+                foreach (DataRow dr in dsIntrebari1.Tables[0].Rows)
+                {
+                    name = dr.ItemArray.GetValue(2).ToString();
+                }
+
+                lbl_Question.Text = name;
+
+                if (counterintrebare <= 10 && counterintrebare >= 1)
+                {
+                    if (checkBox_DA.Checked == true)
+                        punctajLingvistica = punctajLingvistica + 1;
+                }
+
+                if (counterintrebare <= 20 && counterintrebare >= 11)
+                {
+                    if (checkBox_DA.Checked == true)
+                        punctajMatem = punctajMatem + 1;
+                }
+                if (counterintrebare <= 30 && counterintrebare >= 21)
+                {
+                    if (checkBox_DA.Checked == true)
+                        punctajMuzicala = punctajMuzicala + 1;
+                }
+
+                if (counterintrebare <= 40 && counterintrebare >= 31)
+                {
+                    if (checkBox_DA.Checked == true)
+                        punctajMotrica = punctajMotrica + 1;
+                }
+
+                if (counterintrebare <= 50 && counterintrebare >= 41)
+                {
+                    if (checkBox_DA.Checked == true)
+                        punctajSpatiala = punctajSpatiala + 1;
+                }
+
+                if (counterintrebare <= 60 && counterintrebare >= 51)
+                {
+                    if (checkBox_DA.Checked == true)
+                        punctajInterpersonala = punctajInterpersonala + 1;
+                }
+
+                if (counterintrebare <= 70 && counterintrebare >= 61)
+                {
+                    if (checkBox_DA.Checked == true)
+                        punctajIntrapersonala = punctajIntrapersonala + 1;
+                }
+
+                if (counterintrebare <= 79 && counterintrebare >= 71)
+                {
+                    if (checkBox_DA.Checked == true)
+                        punctajNaturalista = punctajNaturalista + 1;
+                }
+
+                if (counterintrebare == counterintrebareMax)
+                {
+                    FinalResultsQuestionnaire2 form = new FinalResultsQuestionnaire2(punctajLingvistica.ToString(), punctajMatem.ToString(), punctajMuzicala.ToString(), punctajMotrica.ToString(), punctajSpatiala.ToString(), punctajInterpersonala.ToString(), punctajIntrapersonala.ToString(), punctajNaturalista.ToString(), UserName);
+                    //MessageBox.Show("Punctaje obtinute:\n Inteligenta lingvistica: " + punctajLingvistica.ToString() + "\n Inteligenta logico-matematica: " + punctajMatem.ToString() + "\n Inteligenta muzicala: " + punctajMuzicala.ToString() + "\n Inteligenta motrica si kinestezica: " + punctajMotrica.ToString() + "\n Inteligenta spatiala: " + punctajSpatiala.ToString() + "\n Inteligenta interpersonala: " + punctajInterpersonala.ToString() + "\n Inteligenta intra personala: " + punctajIntrapersonala.ToString() + "\n Inteligenta naturalista: " + punctajNaturalista.ToString());
+                    this.Hide();
+                    form.ShowDialog();
+                    this.Close();
+                }
+            }
+
+            myConn.Close();
+        }
+
+        private void checkBox_DA_Click(object sender, EventArgs e)
+        {
+            checkBox_NU.Checked = false;
+        }
+
+        private void checkBox_NU_Click(object sender, EventArgs e)
+        {
+            checkBox_DA.Checked = false;
         }
     }
 }

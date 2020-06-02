@@ -180,3 +180,4 @@ D:\Documents\GitHub\CSharp-Windows-Form-Student-Database-Application\LoginForm\L
 D:\Documents\GitHub\CSharp-Windows-Form-Student-Database-Application\LoginForm\LoginForm\obj\Debug\RegisterForm.csproj.CopyComplete
 D:\Documents\GitHub\CSharp-Windows-Form-Student-Database-Application\LoginForm\LoginForm\obj\Debug\LoginForm.AbortForm.resources
 D:\Documents\GitHub\CSharp-Windows-Form-Student-Database-Application\LoginForm\LoginForm\obj\Debug\LoginForm.FinalResults.resources
+D:\Documents\GitHub\CSharp-Windows-Form-Student-Database-Application\LoginForm\LoginForm\obj\Debug\LoginForm.FinalResultsQuestionnaire2.resources

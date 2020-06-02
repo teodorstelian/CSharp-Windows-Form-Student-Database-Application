@@ -111,6 +111,12 @@
     <Compile Include="FinalResults.Designer.cs">
       <DependentUpon>FinalResults.cs</DependentUpon>
     </Compile>
+    <Compile Include="FinalResultsQuestionnaire2.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FinalResultsQuestionnaire2.Designer.cs">
+      <DependentUpon>FinalResultsQuestionnaire2.cs</DependentUpon>
+    </Compile>
     <Compile Include="IUserRepository.cs" />
     <Compile Include="ListOfUniversities.cs">
       <SubType>Form</SubType>
@@ -151,6 +157,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="FinalResults.resx">
       <DependentUpon>FinalResults.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FinalResultsQuestionnaire2.resx">
+      <DependentUpon>FinalResultsQuestionnaire2.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="ListOfUniversities.resx">
       <DependentUpon>ListOfUniversities.cs</DependentUpon>

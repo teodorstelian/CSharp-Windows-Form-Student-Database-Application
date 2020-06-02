@@ -30,6 +30,10 @@
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(MainApp));
             this.panelSideMenu = new System.Windows.Forms.Panel();
+            this.lbl_PB_Category = new System.Windows.Forms.Label();
+            this.lbl_PB_Total = new System.Windows.Forms.Label();
+            this.progressBar_Total = new System.Windows.Forms.ProgressBar();
+            this.progressBar_Category = new System.Windows.Forms.ProgressBar();
             this.trackBar_Choice = new System.Windows.Forms.TrackBar();
             this.btn_Result = new System.Windows.Forms.Button();
             this.btn_Next = new System.Windows.Forms.Button();
@@ -53,10 +57,8 @@
             this.SignOutButton = new System.Windows.Forms.Button();
             this.panelLogo = new System.Windows.Forms.Panel();
             this.pb_StudentHelperLogo = new System.Windows.Forms.PictureBox();
-            this.progressBar_Category = new System.Windows.Forms.ProgressBar();
-            this.progressBar_Total = new System.Windows.Forms.ProgressBar();
-            this.lbl_PB_Total = new System.Windows.Forms.Label();
-            this.lbl_PB_Category = new System.Windows.Forms.Label();
+            this.checkBox_NU = new System.Windows.Forms.CheckBox();
+            this.checkBox_DA = new System.Windows.Forms.CheckBox();
             this.panelSideMenu.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.trackBar_Choice)).BeginInit();
             this.panel1.SuspendLayout();
@@ -68,6 +70,8 @@
             // panelSideMenu
             // 
             this.panelSideMenu.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(11)))), ((int)(((byte)(7)))), ((int)(((byte)(17)))));
+            this.panelSideMenu.Controls.Add(this.checkBox_NU);
+            this.panelSideMenu.Controls.Add(this.checkBox_DA);
             this.panelSideMenu.Controls.Add(this.lbl_PB_Category);
             this.panelSideMenu.Controls.Add(this.lbl_PB_Total);
             this.panelSideMenu.Controls.Add(this.progressBar_Total);
@@ -94,6 +98,40 @@
             this.panelSideMenu.Size = new System.Drawing.Size(1067, 554);
             this.panelSideMenu.TabIndex = 0;
             this.panelSideMenu.MouseDown += new System.Windows.Forms.MouseEventHandler(this.panelSideMenu_MouseDown);
+            // 
+            // lbl_PB_Category
+            // 
+            this.lbl_PB_Category.AutoSize = true;
+            this.lbl_PB_Category.ForeColor = System.Drawing.Color.Gainsboro;
+            this.lbl_PB_Category.Location = new System.Drawing.Point(852, 402);
+            this.lbl_PB_Category.Name = "lbl_PB_Category";
+            this.lbl_PB_Category.Size = new System.Drawing.Size(113, 17);
+            this.lbl_PB_Category.TabIndex = 22;
+            this.lbl_PB_Category.Text = "lbl_PB_Category";
+            // 
+            // lbl_PB_Total
+            // 
+            this.lbl_PB_Total.AutoSize = true;
+            this.lbl_PB_Total.ForeColor = System.Drawing.Color.Gainsboro;
+            this.lbl_PB_Total.Location = new System.Drawing.Point(852, 340);
+            this.lbl_PB_Total.Name = "lbl_PB_Total";
+            this.lbl_PB_Total.Size = new System.Drawing.Size(88, 17);
+            this.lbl_PB_Total.TabIndex = 21;
+            this.lbl_PB_Total.Text = "lbl_PB_Total";
+            // 
+            // progressBar_Total
+            // 
+            this.progressBar_Total.Location = new System.Drawing.Point(855, 360);
+            this.progressBar_Total.Name = "progressBar_Total";
+            this.progressBar_Total.Size = new System.Drawing.Size(170, 23);
+            this.progressBar_Total.TabIndex = 20;
+            // 
+            // progressBar_Category
+            // 
+            this.progressBar_Category.Location = new System.Drawing.Point(855, 422);
+            this.progressBar_Category.Name = "progressBar_Category";
+            this.progressBar_Category.Size = new System.Drawing.Size(170, 23);
+            this.progressBar_Category.TabIndex = 19;
             // 
             // trackBar_Choice
             // 
@@ -142,6 +180,7 @@
             this.btn_StartQ2.TabIndex = 13;
             this.btn_StartQ2.Text = "btn_StartQ2";
             this.btn_StartQ2.UseVisualStyleBackColor = true;
+            this.btn_StartQ2.Click += new System.EventHandler(this.btn_StartQ2_Click);
             // 
             // lbl_Indicator
             // 
@@ -346,39 +385,37 @@
             this.pb_StudentHelperLogo.TabIndex = 0;
             this.pb_StudentHelperLogo.TabStop = false;
             // 
-            // progressBar_Category
+            // checkBox_NU
             // 
-            this.progressBar_Category.Location = new System.Drawing.Point(855, 422);
-            this.progressBar_Category.Name = "progressBar_Category";
-            this.progressBar_Category.Size = new System.Drawing.Size(170, 23);
-            this.progressBar_Category.TabIndex = 19;
+            this.checkBox_NU.AutoSize = true;
+            this.checkBox_NU.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(11)))), ((int)(((byte)(7)))), ((int)(((byte)(17)))));
+            this.checkBox_NU.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.checkBox_NU.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
+            this.checkBox_NU.ForeColor = System.Drawing.Color.Gainsboro;
+            this.checkBox_NU.Location = new System.Drawing.Point(488, 402);
+            this.checkBox_NU.Margin = new System.Windows.Forms.Padding(2);
+            this.checkBox_NU.Name = "checkBox_NU";
+            this.checkBox_NU.Size = new System.Drawing.Size(42, 21);
+            this.checkBox_NU.TabIndex = 24;
+            this.checkBox_NU.Text = "No";
+            this.checkBox_NU.UseVisualStyleBackColor = false;
+            this.checkBox_NU.Click += new System.EventHandler(this.checkBox_NU_Click);
             // 
-            // progressBar_Total
+            // checkBox_DA
             // 
-            this.progressBar_Total.Location = new System.Drawing.Point(855, 360);
-            this.progressBar_Total.Name = "progressBar_Total";
-            this.progressBar_Total.Size = new System.Drawing.Size(170, 23);
-            this.progressBar_Total.TabIndex = 20;
-            // 
-            // lbl_PB_Total
-            // 
-            this.lbl_PB_Total.AutoSize = true;
-            this.lbl_PB_Total.ForeColor = System.Drawing.Color.Gainsboro;
-            this.lbl_PB_Total.Location = new System.Drawing.Point(852, 340);
-            this.lbl_PB_Total.Name = "lbl_PB_Total";
-            this.lbl_PB_Total.Size = new System.Drawing.Size(88, 17);
-            this.lbl_PB_Total.TabIndex = 21;
-            this.lbl_PB_Total.Text = "lbl_PB_Total";
-            // 
-            // lbl_PB_Category
-            // 
-            this.lbl_PB_Category.AutoSize = true;
-            this.lbl_PB_Category.ForeColor = System.Drawing.Color.Gainsboro;
-            this.lbl_PB_Category.Location = new System.Drawing.Point(852, 402);
-            this.lbl_PB_Category.Name = "lbl_PB_Category";
-            this.lbl_PB_Category.Size = new System.Drawing.Size(113, 17);
-            this.lbl_PB_Category.TabIndex = 22;
-            this.lbl_PB_Category.Text = "lbl_PB_Category";
+            this.checkBox_DA.AutoSize = true;
+            this.checkBox_DA.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(11)))), ((int)(((byte)(7)))), ((int)(((byte)(17)))));
+            this.checkBox_DA.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.checkBox_DA.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
+            this.checkBox_DA.ForeColor = System.Drawing.Color.Gainsboro;
+            this.checkBox_DA.Location = new System.Drawing.Point(418, 402);
+            this.checkBox_DA.Margin = new System.Windows.Forms.Padding(2);
+            this.checkBox_DA.Name = "checkBox_DA";
+            this.checkBox_DA.Size = new System.Drawing.Size(48, 21);
+            this.checkBox_DA.TabIndex = 23;
+            this.checkBox_DA.Text = "Yes";
+            this.checkBox_DA.UseVisualStyleBackColor = false;
+            this.checkBox_DA.Click += new System.EventHandler(this.checkBox_DA_Click);
             // 
             // MainApp
             // 
@@ -433,6 +470,8 @@
         private System.Windows.Forms.Label lbl_PB_Category;
         private System.Windows.Forms.Label lbl_PB_Total;
         private System.Windows.Forms.ProgressBar progressBar_Total;
+        private System.Windows.Forms.CheckBox checkBox_NU;
+        private System.Windows.Forms.CheckBox checkBox_DA;
     }
 }
 
