@@ -123,7 +123,7 @@
             this.lbl_subTitleUnivCmp.BackColor = System.Drawing.Color.Black;
             this.lbl_subTitleUnivCmp.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
             this.lbl_subTitleUnivCmp.ForeColor = System.Drawing.SystemColors.ButtonFace;
-            this.lbl_subTitleUnivCmp.Location = new System.Drawing.Point(485, 108);
+            this.lbl_subTitleUnivCmp.Location = new System.Drawing.Point(505, 111);
             this.lbl_subTitleUnivCmp.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.lbl_subTitleUnivCmp.Name = "lbl_subTitleUnivCmp";
             this.lbl_subTitleUnivCmp.Size = new System.Drawing.Size(130, 24);
@@ -174,9 +174,9 @@
             this.Univ1GroupBox.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.Univ1GroupBox.ForeColor = System.Drawing.SystemColors.ActiveBorder;
             this.Univ1GroupBox.Location = new System.Drawing.Point(9, 147);
-            this.Univ1GroupBox.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.Univ1GroupBox.Margin = new System.Windows.Forms.Padding(2);
             this.Univ1GroupBox.Name = "Univ1GroupBox";
-            this.Univ1GroupBox.Padding = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.Univ1GroupBox.Padding = new System.Windows.Forms.Padding(2);
             this.Univ1GroupBox.Size = new System.Drawing.Size(525, 397);
             this.Univ1GroupBox.TabIndex = 34;
             this.Univ1GroupBox.TabStop = false;
@@ -189,7 +189,7 @@
             this.ReadMoreButton1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.ReadMoreButton1.ForeColor = System.Drawing.SystemColors.ControlLightLight;
             this.ReadMoreButton1.Location = new System.Drawing.Point(4, 374);
-            this.ReadMoreButton1.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.ReadMoreButton1.Margin = new System.Windows.Forms.Padding(2);
             this.ReadMoreButton1.Name = "ReadMoreButton1";
             this.ReadMoreButton1.Size = new System.Drawing.Size(99, 19);
             this.ReadMoreButton1.TabIndex = 79;
@@ -225,7 +225,7 @@
             this.SelectUnivBox1.Location = new System.Drawing.Point(109, 376);
             this.SelectUnivBox1.Name = "SelectUnivBox1";
             this.SelectUnivBox1.ReadOnly = true;
-            this.SelectUnivBox1.Size = new System.Drawing.Size(99, 13);
+            this.SelectUnivBox1.Size = new System.Drawing.Size(121, 13);
             this.SelectUnivBox1.TabIndex = 32;
             this.SelectUnivBox1.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
@@ -486,9 +486,9 @@
             this.Univ2GroupBox.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.Univ2GroupBox.ForeColor = System.Drawing.SystemColors.ActiveBorder;
             this.Univ2GroupBox.Location = new System.Drawing.Point(542, 147);
-            this.Univ2GroupBox.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.Univ2GroupBox.Margin = new System.Windows.Forms.Padding(2);
             this.Univ2GroupBox.Name = "Univ2GroupBox";
-            this.Univ2GroupBox.Padding = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.Univ2GroupBox.Padding = new System.Windows.Forms.Padding(2);
             this.Univ2GroupBox.Size = new System.Drawing.Size(525, 397);
             this.Univ2GroupBox.TabIndex = 33;
             this.Univ2GroupBox.TabStop = false;
@@ -500,8 +500,8 @@
             this.ReadMoreButton2.FlatAppearance.BorderSize = 0;
             this.ReadMoreButton2.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.ReadMoreButton2.ForeColor = System.Drawing.SystemColors.ControlLightLight;
-            this.ReadMoreButton2.Location = new System.Drawing.Point(310, 374);
-            this.ReadMoreButton2.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.ReadMoreButton2.Location = new System.Drawing.Point(286, 374);
+            this.ReadMoreButton2.Margin = new System.Windows.Forms.Padding(2);
             this.ReadMoreButton2.Name = "ReadMoreButton2";
             this.ReadMoreButton2.Size = new System.Drawing.Size(99, 19);
             this.ReadMoreButton2.TabIndex = 57;
@@ -514,10 +514,10 @@
             this.SelectUnivBox2.BackColor = System.Drawing.SystemColors.Desktop;
             this.SelectUnivBox2.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.SelectUnivBox2.ForeColor = System.Drawing.SystemColors.Window;
-            this.SelectUnivBox2.Location = new System.Drawing.Point(415, 376);
+            this.SelectUnivBox2.Location = new System.Drawing.Point(390, 376);
             this.SelectUnivBox2.Name = "SelectUnivBox2";
             this.SelectUnivBox2.ReadOnly = true;
-            this.SelectUnivBox2.Size = new System.Drawing.Size(99, 13);
+            this.SelectUnivBox2.Size = new System.Drawing.Size(124, 13);
             this.SelectUnivBox2.TabIndex = 56;
             this.SelectUnivBox2.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 

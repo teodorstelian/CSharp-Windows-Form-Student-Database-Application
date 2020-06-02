@@ -59,6 +59,7 @@
             this.SignOutButton = new System.Windows.Forms.Button();
             this.panelLogo = new System.Windows.Forms.Panel();
             this.pb_StudentHelperLogo = new System.Windows.Forms.PictureBox();
+            this.Test2ResultsButton = new System.Windows.Forms.Button();
             this.panelSideMenu.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.trackBar_Choice)).BeginInit();
             this.panel1.SuspendLayout();
@@ -70,6 +71,7 @@
             // panelSideMenu
             // 
             this.panelSideMenu.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(11)))), ((int)(((byte)(7)))), ((int)(((byte)(17)))));
+            this.panelSideMenu.Controls.Add(this.panel1);
             this.panelSideMenu.Controls.Add(this.checkBox_NU);
             this.panelSideMenu.Controls.Add(this.checkBox_DA);
             this.panelSideMenu.Controls.Add(this.lbl_PB_Category);
@@ -89,7 +91,6 @@
             this.panelSideMenu.Controls.Add(this.lbl_Subtitle);
             this.panelSideMenu.Controls.Add(this.btn_StartQ1);
             this.panelSideMenu.Controls.Add(this.lbl_Title);
-            this.panelSideMenu.Controls.Add(this.panel1);
             this.panelSideMenu.Controls.Add(this.panelLoginSubMenu);
             this.panelSideMenu.Controls.Add(this.panelLogo);
             this.panelSideMenu.Location = new System.Drawing.Point(0, 0);
@@ -335,7 +336,7 @@
             this.UniversitiesButton.FlatAppearance.BorderSize = 0;
             this.UniversitiesButton.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.UniversitiesButton.ForeColor = System.Drawing.Color.Gainsboro;
-            this.UniversitiesButton.Location = new System.Drawing.Point(106, 0);
+            this.UniversitiesButton.Location = new System.Drawing.Point(112, 0);
             this.UniversitiesButton.Name = "UniversitiesButton";
             this.UniversitiesButton.Padding = new System.Windows.Forms.Padding(10, 0, 0, 0);
             this.UniversitiesButton.Size = new System.Drawing.Size(106, 54);
@@ -368,7 +369,7 @@
             this.MyAccountButton.Location = new System.Drawing.Point(0, 0);
             this.MyAccountButton.Name = "MyAccountButton";
             this.MyAccountButton.Padding = new System.Windows.Forms.Padding(10, 0, 0, 0);
-            this.MyAccountButton.Size = new System.Drawing.Size(106, 54);
+            this.MyAccountButton.Size = new System.Drawing.Size(112, 54);
             this.MyAccountButton.TabIndex = 3;
             this.MyAccountButton.Text = "My Account";
             this.MyAccountButton.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
@@ -378,11 +379,12 @@
             // panelLoginSubMenu
             // 
             this.panelLoginSubMenu.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(35)))), ((int)(((byte)(32)))), ((int)(((byte)(38)))));
+            this.panelLoginSubMenu.Controls.Add(this.Test2ResultsButton);
             this.panelLoginSubMenu.Controls.Add(this.TestResultsButton);
             this.panelLoginSubMenu.Controls.Add(this.SignOutButton);
             this.panelLoginSubMenu.Location = new System.Drawing.Point(300, 63);
             this.panelLoginSubMenu.Name = "panelLoginSubMenu";
-            this.panelLoginSubMenu.Size = new System.Drawing.Size(106, 54);
+            this.panelLoginSubMenu.Size = new System.Drawing.Size(112, 75);
             this.panelLoginSubMenu.TabIndex = 2;
             // 
             // TestResultsButton
@@ -393,9 +395,9 @@
             this.TestResultsButton.ForeColor = System.Drawing.Color.LightGray;
             this.TestResultsButton.Location = new System.Drawing.Point(0, 25);
             this.TestResultsButton.Name = "TestResultsButton";
-            this.TestResultsButton.Size = new System.Drawing.Size(106, 26);
+            this.TestResultsButton.Size = new System.Drawing.Size(112, 25);
             this.TestResultsButton.TabIndex = 2;
-            this.TestResultsButton.Text = "Test Results";
+            this.TestResultsButton.Text = "Test 1 Results";
             this.TestResultsButton.UseVisualStyleBackColor = true;
             this.TestResultsButton.Click += new System.EventHandler(this.TestResultsButton_Click);
             // 
@@ -407,7 +409,7 @@
             this.SignOutButton.ForeColor = System.Drawing.Color.LightGray;
             this.SignOutButton.Location = new System.Drawing.Point(0, 0);
             this.SignOutButton.Name = "SignOutButton";
-            this.SignOutButton.Size = new System.Drawing.Size(106, 25);
+            this.SignOutButton.Size = new System.Drawing.Size(112, 25);
             this.SignOutButton.TabIndex = 0;
             this.SignOutButton.Text = "Sign Out";
             this.SignOutButton.UseVisualStyleBackColor = true;
@@ -429,6 +431,20 @@
             this.pb_StudentHelperLogo.Size = new System.Drawing.Size(292, 54);
             this.pb_StudentHelperLogo.TabIndex = 0;
             this.pb_StudentHelperLogo.TabStop = false;
+            // 
+            // Test2ResultsButton
+            // 
+            this.Test2ResultsButton.Dock = System.Windows.Forms.DockStyle.Top;
+            this.Test2ResultsButton.FlatAppearance.BorderSize = 0;
+            this.Test2ResultsButton.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.Test2ResultsButton.ForeColor = System.Drawing.Color.LightGray;
+            this.Test2ResultsButton.Location = new System.Drawing.Point(0, 50);
+            this.Test2ResultsButton.Name = "Test2ResultsButton";
+            this.Test2ResultsButton.Size = new System.Drawing.Size(112, 25);
+            this.Test2ResultsButton.TabIndex = 3;
+            this.Test2ResultsButton.Text = "Test 2 Results";
+            this.Test2ResultsButton.UseVisualStyleBackColor = true;
+            this.Test2ResultsButton.Click += new System.EventHandler(this.Test2ResultsButton_Click);
             // 
             // MainApp
             // 
@@ -485,6 +501,7 @@
         private System.Windows.Forms.ProgressBar progressBar_Total;
         private System.Windows.Forms.CheckBox checkBox_NU;
         private System.Windows.Forms.CheckBox checkBox_DA;
+        private System.Windows.Forms.Button Test2ResultsButton;
     }
 }
 

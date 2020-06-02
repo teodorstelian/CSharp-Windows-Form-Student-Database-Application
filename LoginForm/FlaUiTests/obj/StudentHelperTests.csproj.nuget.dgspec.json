@@ -1,20 +1,20 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\Vasile\\Documents\\GitHub\\II-2019-20\\LoginForm\\FlaUiTests\\StudentHelperTests.csproj": {}
+    "C:\\Users\\Teo\\Documents\\GitHub\\II-2019-20\\LoginForm\\FlaUiTests\\StudentHelperTests.csproj": {}
   },
   "projects": {
-    "C:\\Users\\Vasile\\Documents\\GitHub\\II-2019-20\\LoginForm\\FlaUiTests\\StudentHelperTests.csproj": {
+    "C:\\Users\\Teo\\Documents\\GitHub\\II-2019-20\\LoginForm\\FlaUiTests\\StudentHelperTests.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Vasile\\Documents\\GitHub\\II-2019-20\\LoginForm\\FlaUiTests\\StudentHelperTests.csproj",
+        "projectUniqueName": "C:\\Users\\Teo\\Documents\\GitHub\\II-2019-20\\LoginForm\\FlaUiTests\\StudentHelperTests.csproj",
         "projectName": "StudentHelperTests",
-        "projectPath": "C:\\Users\\Vasile\\Documents\\GitHub\\II-2019-20\\LoginForm\\FlaUiTests\\StudentHelperTests.csproj",
-        "packagesPath": "C:\\Users\\Vasile\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Vasile\\Documents\\GitHub\\II-2019-20\\LoginForm\\FlaUiTests\\obj\\",
+        "projectPath": "C:\\Users\\Teo\\Documents\\GitHub\\II-2019-20\\LoginForm\\FlaUiTests\\StudentHelperTests.csproj",
+        "packagesPath": "C:\\Users\\Teo\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\Teo\\Documents\\GitHub\\II-2019-20\\LoginForm\\FlaUiTests\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "C:\\Users\\Vasile\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\Teo\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -79,7 +79,7 @@
           ],
           "assetTargetFallback": true,
           "warn": true,
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.1.202\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.1.201\\RuntimeIdentifierGraph.json"
         }
       }
     }

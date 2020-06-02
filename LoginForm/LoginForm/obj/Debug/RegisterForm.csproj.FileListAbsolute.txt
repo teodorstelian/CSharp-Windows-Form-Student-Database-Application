@@ -225,3 +225,10 @@ D:\Documents\GitHub\CSharp-Windows-Form-Student-Database-Application\LoginForm\L
 D:\Documents\GitHub\CSharp-Windows-Form-Student-Database-Application\LoginForm\LoginForm\bin\Debug\Chestionar2_log.ldf
 D:\Documents\GitHub\CSharp-Windows-Form-Student-Database-Application\LoginForm\LoginForm\bin\Debug\Database1.mdf
 D:\Documents\GitHub\CSharp-Windows-Form-Student-Database-Application\LoginForm\LoginForm\bin\Debug\Database1_log.ldf
+C:\Users\Teo\Documents\GitHub\II-2019-20\LoginForm\LoginForm\bin\Debug\Chestionar2.mdf
+C:\Users\Teo\Documents\GitHub\II-2019-20\LoginForm\LoginForm\bin\Debug\Chestionar2_log.ldf
+C:\Users\Teo\Documents\GitHub\II-2019-20\LoginForm\LoginForm\bin\Debug\Database1.mdf
+C:\Users\Teo\Documents\GitHub\II-2019-20\LoginForm\LoginForm\bin\Debug\Database1_log.ldf
+C:\Users\Teo\Documents\GitHub\II-2019-20\LoginForm\LoginForm\obj\Debug\LoginForm.AbortForm.resources
+C:\Users\Teo\Documents\GitHub\II-2019-20\LoginForm\LoginForm\obj\Debug\LoginForm.FinalResults.resources
+C:\Users\Teo\Documents\GitHub\II-2019-20\LoginForm\LoginForm\obj\Debug\LoginForm.FinalResultsQuestionnaire2.resources

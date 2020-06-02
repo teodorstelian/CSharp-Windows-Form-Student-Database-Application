@@ -27,7 +27,7 @@ namespace LoginForm
             Reset();
         }
         /// <summary>
-        /// IN PROGRESS - Display the user inthe label
+        /// Display the user inthe label
         /// </summary>
         private void WelcomeUser()
         {
@@ -76,9 +76,17 @@ namespace LoginForm
 
         private void TestResultsButton_Click(object sender, EventArgs e)
         {
-            FinalResults thirdForm = new FinalResults(punctajG.ToString(), punctajV.ToString(), punctajN.ToString(), punctajC.ToString(), categorieGNivel.ToString(), categorieVNivel.ToString(), categorieNNivel.ToString(), categorieCNivel.ToString(), UserName);
+            FinalResults Form = new FinalResults(punctajG.ToString(), punctajV.ToString(), punctajN.ToString(), punctajC.ToString(), categorieGNivel.ToString(), categorieVNivel.ToString(), categorieNNivel.ToString(), categorieCNivel.ToString(), UserName);
             this.Hide();
-            thirdForm.ShowDialog();
+            Form.ShowDialog();
+            this.Close();
+        }
+
+        private void Test2ResultsButton_Click(object sender, EventArgs e)
+        {
+            FinalResultsQuestionnaire2 form = new FinalResultsQuestionnaire2(punctajLingvistica.ToString(), punctajMatem.ToString(), punctajMuzicala.ToString(), punctajMotrica.ToString(), punctajSpatiala.ToString(), punctajInterpersonala.ToString(), punctajIntrapersonala.ToString(), punctajNaturalista.ToString(), UserName);
+            this.Hide();
+            form.ShowDialog();
             this.Close();
         }
 
@@ -195,8 +203,6 @@ namespace LoginForm
             trackBar_Choice.Visible = true;
 
             myCon.ConnectionString = @"Data Source = (LocalDB)\MSSQLLocalDB; AttachDbFilename = 'D:\Documents\GitHub\CSharp-Windows-Form-Student-Database-Application\LoginForm\LoginForm\Database1.mdf'; Integrated Security = True";
-            // myCon.ConnectionString = @"Data Source = (LocalDB)\MSSQC:\Users\filda\Desktop\IntrebariChestionar1\IntrebariChestionar1\Renunta.csLLocalDB; AttachDbFilename = 'E:\an 3 sem 2\Industrial Informatics - II\proiect\actual\II PROIECT\II PROIECT\VERSIUNE 1\IntrebariChestionar1\Database1.mdf'; Integrated Security = True";
-
             myCon.Open();
 
             dsIntrebari = new DataSet();
@@ -310,7 +316,6 @@ namespace LoginForm
         private void btn_Result_Click(object sender, EventArgs e)
         {
             //Claudiu
-            // MessageBox.Show("Punctajul obtinut la categoria G este: " + categorieG.ToString());
 
             if (punctajG >= 10 && punctajG <= 15)
             {
@@ -333,12 +338,9 @@ namespace LoginForm
                 categorieGNivel = 5;
             }
 
-            // MessageBox.Show("Nivelul meu de invatare generala (G) este: " + categorieGNivel.ToString());
-
             // end Claudiu
 
             //Ionela
-            // MessageBox.Show("Punctajul obtinut la categoria V este: " + punctajV.ToString());
 
             if (punctajV >= 11 && punctajV <= 17)
             {
@@ -365,10 +367,6 @@ namespace LoginForm
                 categorieVNivel = 5;
             }
 
-            // MessageBox.Show("Nivelul meu de abilitate verbala (V) este: " + categorieVNivel.ToString());
-
-            // MessageBox.Show("Punctajul obtinut la categoria N este: " + punctajN.ToString());
-
             // atribuirea punctajului obtinut nivelului corespunzator categoriei N (abilitate numerica) 
             if (punctajN >= 9 && punctajN <= 14)
             {
@@ -394,10 +392,6 @@ namespace LoginForm
             {
                 categorieNNivel = 5;
             }
-
-            // MessageBox.Show("Nivelul meu de abilitate numerica (N) este: " + categorieNNivel.ToString());
-
-            // MessageBox.Show("Punctajul obtinut la categoria C este: " + punctajC.ToString());
 
             // atribuirea punctajului obtinut nivelului corespunzator categoriei C (coordonare ochi-mana) 
             if (punctajC >= 14 && punctajC <= 21)
@@ -437,7 +431,7 @@ namespace LoginForm
         {
             // Claudiu
 
-            UserName = "User1";//  AICI TREBUIE SA PRIMESC PARAMETRU DE LA PROIECTUL PRINCTIPAL !!!!!!!!!!!!!
+            UserName = "User1";
 
             categoryID = "G";
             counterG = 0;
@@ -457,8 +451,7 @@ namespace LoginForm
             lbl_Indicator.Text = "";
 
             counterintrebare = 0;
-            //lbl_QuestionNumber.Text = "Intrebarea numarul: " + counterintrebare.ToString();
-
+          
             counterintrebareMax = 44;
 
             trackBar_Choice.Visible = false;
@@ -483,8 +476,7 @@ namespace LoginForm
 
         private void btn_Abort_Click(object sender, EventArgs e)
         {
-            //AbortForm abortForm = new AbortForm();
-            //abortForm.ShowDialog();
+          
             DialogResult result = MessageBox.Show("Are you sure you want to quit?", "Quit Prompt", MessageBoxButtons.YesNo, MessageBoxIcon.Question);
             
             switch (result)
@@ -515,8 +507,7 @@ namespace LoginForm
             lbl_PB_Total.Visible = true;
 
             myCon.ConnectionString = @"Data Source = (LocalDB)\MSSQLLocalDB; AttachDbFilename = 'C:\Users\dania\OneDrive\Scoală\An3Sem2\Industrial Informatics (II)\Project\IntrebariChestionar1\Database1.mdf'; Integrated Security = True";
-            // myCon.ConnectionString = @"Data Source = (LocalDB)\MSSQC:\Users\filda\Desktop\IntrebariChestionar1\IntrebariChestionar1\Renunta.csLLocalDB; AttachDbFilename = 'E:\an 3 sem 2\Industrial Informatics - II\proiect\actual\II PROIECT\II PROIECT\VERSIUNE 1\IntrebariChestionar1\Database1.mdf'; Integrated Security = True";
-
+           
             myCon.Open();
 
             dsIntrebari = new DataSet();
@@ -579,7 +570,6 @@ namespace LoginForm
         private void CitesteIntrebare()
         {
             myConn.ConnectionString = @"Data Source = (LocalDB)\MSSQLLocalDB; AttachDbFilename = 'C:\Users\dania\Desktop\Chestionar2\Chestionar2.mdf'; Integrated Security = True";
-            //myConn.ConnectionString = @"Data Source = (LocalDB)\MSSQLLocalDB; AttachDbFilename = 'C:\Users\filda\Desktop\Chestionar2\Chestionar2\Chestionar2.mdf'; Integrated Security = True";
             myConn.Open();
 
             dsIntrebari1 = new DataSet();
@@ -651,7 +641,6 @@ namespace LoginForm
                 if (counterintrebare == counterintrebareMax)
                 {
                     FinalResultsQuestionnaire2 form = new FinalResultsQuestionnaire2(punctajLingvistica.ToString(), punctajMatem.ToString(), punctajMuzicala.ToString(), punctajMotrica.ToString(), punctajSpatiala.ToString(), punctajInterpersonala.ToString(), punctajIntrapersonala.ToString(), punctajNaturalista.ToString(), UserName);
-                    //MessageBox.Show("Punctaje obtinute:\n Inteligenta lingvistica: " + punctajLingvistica.ToString() + "\n Inteligenta logico-matematica: " + punctajMatem.ToString() + "\n Inteligenta muzicala: " + punctajMuzicala.ToString() + "\n Inteligenta motrica si kinestezica: " + punctajMotrica.ToString() + "\n Inteligenta spatiala: " + punctajSpatiala.ToString() + "\n Inteligenta interpersonala: " + punctajInterpersonala.ToString() + "\n Inteligenta intra personala: " + punctajIntrapersonala.ToString() + "\n Inteligenta naturalista: " + punctajNaturalista.ToString());
                     this.Hide();
                     form.ShowDialog();
                     this.Close();
@@ -670,5 +659,7 @@ namespace LoginForm
         {
             checkBox_DA.Checked = false;
         }
+
+      
     }
 }
